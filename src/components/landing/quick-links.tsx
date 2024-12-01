@@ -40,6 +40,7 @@ import {
   IconTerminal2,
 } from "@tabler/icons-react";
 import Image from "next/image";
+import { Highlights } from "./highlights";
 
 export function QuickLinks() {
   const links = [
@@ -88,9 +89,9 @@ export function QuickLinks() {
     },
   ];
   return (
-    <div className="flex items-center justify-center my-20 w-full">
+    <div className="flex h-min my-20 w-full">
       <FloatingDock
-        mobileClassName="translate-y-20" // only for demo, remove for production
+        // mobileClassName="translate-y-20" 
         items={links}
       />
     </div>
