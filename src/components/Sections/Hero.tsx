@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import { LampContainer } from "../ui/lamp";
 import { Button } from "../ui/button";
+import Video from "./Video";
 
 export const Hero = () => {
   return (
     <div>
-      <LampContainer>
+      <LampContainer className="">
         <h1
           // initial={{ opacity: 0.5, y: 100 }}
           // whileInView={{ opacity: 1, y: 0 }}
@@ -30,6 +31,8 @@ export const Hero = () => {
           <p>Explore Programs</p>
         </div>
       </LampContainer>
+      <Video />
+
     </div>
   );
 };
