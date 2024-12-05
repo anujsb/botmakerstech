@@ -13,7 +13,7 @@ const Video = () => {
         ></iframe>
       </div> */}
       <video width="1130" height="1240" autoPlay loop muted className="border border-accent rounded-xl shadow-lg shadow-accent">
-        <source src="/2x-demo.mp4" type="video/mp4" />
+        <source src="https://botmakerstech.in/wp-content/uploads/2024/09/video1-.webm" type="video/mp4" />
         {/* <track
         src="/path/to/captions.vtt"
         kind="subtitles"
