@@ -5,7 +5,7 @@ import { FloatingNav } from "../ui/floating-navbar";
 export function Header() {
   const navItems = [
     { name: "Home", link: "/" },
-    { name: "Play Zone", link: "/#about" },
+    { name: "Robo Playzone", link: "/#about" },
     { name: "InnoTech Academy", link: "/#features" },
     { name: "Services", link: "https://21bubbles.com/" },
     
