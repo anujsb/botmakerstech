@@ -22,23 +22,23 @@ export const Footer = () => {
               hierarchies.
             </p> */}
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-700 hover:text-white">
+              <a href="#" className="text-gray-700 hover:text-black">
                 <span className="sr-only">Facebook</span>
                 <Facebook className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-700 hover:text-white">
+              <a href="#" className="text-gray-700 hover:text-black">
                 <span className="sr-only">Twitter</span>
                 <Twitter className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-700 hover:text-white">
+              <a href="#" className="text-gray-700 hover:text-black">
                 <span className="sr-only">Instagram</span>
                 <Instagram className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-700 hover:text-white">
+              <a href="#" className="text-gray-700 hover:text-black">
                 <span className="sr-only">LinkedIn</span>
                 <Linkedin className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-700 hover:text-white">
+              <a href="#" className="text-gray-700 hover:text-black">
                 <span className="sr-only">GitHub</span>
                 <Github className="h-6 w-6" />
               </a>
@@ -54,7 +54,7 @@ export const Footer = () => {
                   <li>
                     <Link
                       href="#"
-                      className="text-base text-gray-500 hover:text-white"
+                      className="text-base text-gray-500 hover:text-black"
                     >
                       Marketing
                     </Link>
@@ -62,7 +62,7 @@ export const Footer = () => {
                   <li>
                     <Link
                       href="#"
-                      className="text-base text-gray-500 hover:text-white"
+                      className="text-base text-gray-500 hover:text-black"
                     >
                       Analytics
                     </Link>
@@ -70,7 +70,7 @@ export const Footer = () => {
                   <li>
                     <Link
                       href="#"
-                      className="text-base text-gray-500 hover:text-white"
+                      className="text-base text-gray-500 hover:text-black"
                     >
                       Commerce
                     </Link>
@@ -78,7 +78,7 @@ export const Footer = () => {
                   <li>
                     <Link
                       href="#"
-                      className="text-base text-gray-500 hover:text-white"
+                      className="text-base text-gray-500 hover:text-black"
                     >
                       Insights
                     </Link>
@@ -93,7 +93,7 @@ export const Footer = () => {
                   <li>
                     <Link
                       href="#"
-                      className="text-base text-gray-500 hover:text-white"
+                      className="text-base text-gray-500 hover:text-black"
                     >
                       Pricing
                     </Link>
@@ -101,7 +101,7 @@ export const Footer = () => {
                   <li>
                     <Link
                       href="#"
-                      className="text-base text-gray-500 hover:text-white"
+                      className="text-base text-gray-500 hover:text-black"
                     >
                       Documentation
                     </Link>
@@ -109,7 +109,7 @@ export const Footer = () => {
                   <li>
                     <Link
                       href="#"
-                      className="text-base text-gray-500 hover:text-white"
+                      className="text-base text-gray-500 hover:text-black"
                     >
                       Guides
                     </Link>
@@ -117,7 +117,7 @@ export const Footer = () => {
                   <li>
                     <Link
                       href="#"
-                      className="text-base text-gray-500 hover:text-white"
+                      className="text-base text-gray-500 hover:text-black"
                     >
                       API Status
                     </Link>
@@ -134,7 +134,7 @@ export const Footer = () => {
                   <li>
                     <Link
                       href="#"
-                      className="text-base text-gray-500 hover:text-white"
+                      className="text-base text-gray-500 hover:text-black"
                     >
                       About
                     </Link>
@@ -142,7 +142,7 @@ export const Footer = () => {
                   <li>
                     <Link
                       href="#"
-                      className="text-base text-gray-500 hover:text-white"
+                      className="text-base text-gray-500 hover:text-black"
                     >
                       Blog
                     </Link>
@@ -150,7 +150,7 @@ export const Footer = () => {
                   <li>
                     <Link
                       href="#"
-                      className="text-base text-gray-500 hover:text-white"
+                      className="text-base text-gray-500 hover:text-black"
                     >
                       Jobs
                     </Link>
@@ -158,7 +158,7 @@ export const Footer = () => {
                   <li>
                     <Link
                       href="#"
-                      className="text-base text-gray-500 hover:text-white"
+                      className="text-base text-gray-500 hover:text-black"
                     >
                       Press
                     </Link>
@@ -173,7 +173,7 @@ export const Footer = () => {
                   <li>
                     <Link
                       href="#"
-                      className="text-base text-gray-500 hover:text-white"
+                      className="text-base text-gray-500 hover:text-black"
                     >
                       Privacy
                     </Link>
@@ -181,7 +181,7 @@ export const Footer = () => {
                   <li>
                     <Link
                       href="#"
-                      className="text-base text-gray-500 hover:text-white"
+                      className="text-base text-gray-500 hover:text-black"
                     >
                       Terms
                     </Link>
@@ -193,7 +193,10 @@ export const Footer = () => {
         </div>
         <div className="mt-12 border-t border-gray-700 pt-8">
           <p className="text-base text-gray-700 xl:text-center">
-            &copy; 2023 Your Company, Inc. All rights reserved.
+            &copy; 2024 Botmakers, Inc. All rights reserved.
+            <span className="text-base text-gray-700 xl:text-center hover:text-blue-700 hover:font-semibold font-semi hover:underline">
+              <Link href="https://www.21bubbles.com/">Website by 21bubbles</Link>
+            </span>
           </p>
         </div>
       </div>
