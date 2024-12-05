@@ -55,7 +55,7 @@ const content = [
 ];
 export function Services() {
   return (
-    <div className="p-10 py-10">
+    <div className="p-10 py-10 bg-gradient-to-b from-background to-orange-50">
       <StickyScroll content={content} />
     </div>
   );

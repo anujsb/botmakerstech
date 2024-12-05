@@ -7,7 +7,7 @@ import { WhyChooseUs } from "@/components/Sections/WhyChooseUs";
 
 export default function Home() {
   return (
-    <div className="container mx-auto">
+    <div className="">
       <Header />
       <Hero />
       {/* <QuickLinks /> */}
