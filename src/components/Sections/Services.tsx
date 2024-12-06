@@ -55,7 +55,7 @@ const content = [
 ];
 export function Services() {
   return (
-    <div className="p-10 py-10 bg-gradient-to-b from-background to-orange-50">
+    <div className="py-10 bg-gradient-to-b from-background to-orange-50 w-full">
               <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-center ">
                 Our Products
               </h2>

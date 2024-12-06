@@ -74,9 +74,9 @@ export const Contact = () => {
               </div>
             </form>
           </div>
-          <div className="space-y-8">
+          <div className="space-y-4">
             <div>
-              <h3 className="text-lg font-medium text-gray-900 mb-4 font-semibold">
+              <h3 className="text-lg text-gray-900 mb-4 font-semibold">
                 Contact Information
               </h3>
               <div className="space-y-4">
@@ -93,14 +93,14 @@ export const Contact = () => {
                     contact@botmakerstech.in
                   </a>
                 </div>
-                <div className="flex items-start">
+                {/* <div className="flex items-start">
                   <MapPin className="h-5 w-5 text-gray-400 mr-2 mt-1" />
                   <address className="not-italic">
                     Sr no 80, Ganranj Mangal Karyalay, Manik Padma Smruti,<br/> Plot
                     no 13, near Ness Digital Engineering, Lalit Estate,<br/> Baner,
                     Pune, Maharashtra 411045
                   </address>
-                </div>
+                </div> */}
               </div>
             </div>
             <div>

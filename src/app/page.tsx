@@ -19,7 +19,6 @@ export default function Home() {
       <WhyChooseUs />
       <SuccessStories />
       <Testimonials />
-      <Faq />
       <Contact />
       <Footer />
     </div>

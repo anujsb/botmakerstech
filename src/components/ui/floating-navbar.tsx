@@ -86,7 +86,7 @@ export const FloatingNav: React.FC<FloatingNavProps> = ({
           </div>
           <Link href="/createform">
             <Button className="mx-4 black-grad-radial shadow-inner border border-accent text-white font-semibold rounded-lg">
-              Try For free
+            Get in Touch
             </Button>
           </Link>
           <Button
