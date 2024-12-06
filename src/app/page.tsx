@@ -11,7 +11,7 @@ import { WhyChooseUs } from "@/components/Sections/WhyChooseUs";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="text-center">
       <Header />
       <Hero />
       {/* <QuickLinks /> */}

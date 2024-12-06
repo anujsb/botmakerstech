@@ -90,7 +90,7 @@ export default function ServicesPage() {
   ];
 
   return (
-    <div className="bg-[#ffffff] text-[#050315]">
+    <div className="bg-[#ffffff] text-[#050315] text-justify">
       <Header />
       <motion.header
         className="bg-[#ff6101] text-white py-20 text-center relative overflow-hidden"

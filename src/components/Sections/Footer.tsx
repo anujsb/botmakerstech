@@ -48,7 +48,7 @@ export const Footer = () => {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold text-gray-700 tracking-wider uppercase">
-                  Solutions
+                  Menu
                 </h3>
                 <ul className="mt-4 space-y-4">
                   <li>
@@ -56,7 +56,7 @@ export const Footer = () => {
                       href="#"
                       className="text-base text-gray-500 hover:text-black"
                     >
-                      Marketing
+                      Home
                     </Link>
                   </li>
                   <li>
@@ -64,7 +64,7 @@ export const Footer = () => {
                       href="#"
                       className="text-base text-gray-500 hover:text-black"
                     >
-                      Analytics
+                      Robo Playzone
                     </Link>
                   </li>
                   <li>
@@ -72,20 +72,20 @@ export const Footer = () => {
                       href="#"
                       className="text-base text-gray-500 hover:text-black"
                     >
-                      Commerce
+                      InnoTech Academy
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link
                       href="#"
                       className="text-base text-gray-500 hover:text-black"
                     >
                       Insights
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
-              <div className="mt-12 md:mt-0">
+              {/* <div className="mt-12 md:mt-0">
                 <h3 className="text-sm font-semibold text-gray-700 tracking-wider uppercase">
                   Support
                 </h3>
@@ -123,7 +123,7 @@ export const Footer = () => {
                     </Link>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
@@ -133,7 +133,7 @@ export const Footer = () => {
                 <ul className="mt-4 space-y-4">
                   <li>
                     <Link
-                      href="#"
+                      href="/about"
                       className="text-base text-gray-500 hover:text-black"
                     >
                       About
@@ -144,7 +144,7 @@ export const Footer = () => {
                       href="#"
                       className="text-base text-gray-500 hover:text-black"
                     >
-                      Blog
+                      Services
                     </Link>
                   </li>
                   <li>
@@ -152,7 +152,7 @@ export const Footer = () => {
                       href="#"
                       className="text-base text-gray-500 hover:text-black"
                     >
-                      Jobs
+                      Insights
                     </Link>
                   </li>
                   <li>
@@ -160,7 +160,7 @@ export const Footer = () => {
                       href="#"
                       className="text-base text-gray-500 hover:text-black"
                     >
-                      Press
+                      Contact
                     </Link>
                   </li>
                 </ul>
@@ -183,7 +183,7 @@ export const Footer = () => {
                       href="#"
                       className="text-base text-gray-500 hover:text-black"
                     >
-                      Terms
+                      Terms and Conditions
                     </Link>
                   </li>
                 </ul>
@@ -194,8 +194,10 @@ export const Footer = () => {
         <div className="mt-12 border-t border-gray-700 pt-8">
           <p className="text-base text-gray-700 xl:text-center">
             &copy; 2024 Botmakers, Inc. All rights reserved.
-            <span className="text-base text-gray-700 xl:text-center hover:text-blue-700 hover:font-semibold font-semi hover:underline">
-              <Link href="https://www.21bubbles.com/">Website by 21bubbles</Link>
+            <span className="text-base text-gray-700 xl:text-center hover:text-blue-700 font-semi hover:underline">
+              <Link href="https://www.21bubbles.com/">
+                Website by 21bubbles
+              </Link>
             </span>
           </p>
         </div>

@@ -90,7 +90,7 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="bg-[#ffffff] text-[#050315] ">
+    <div className="bg-[#ffffff] text-[#050315] text-justify">
       <Header />
       <motion.header
         className="bg-[#ff6101] text-white py-20 text-center relative overflow-hidden"
@@ -117,7 +117,7 @@ export default function AboutPage() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
         >
-          About Botmakers Pvt. Ltd.
+          About Us.
         </motion.h1>
         <motion.p
           className="text-2xl relative z-10"
@@ -280,7 +280,7 @@ export default function AboutPage() {
           </motion.button>
         </div>
       </motion.section>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
