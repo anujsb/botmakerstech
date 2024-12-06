@@ -11,9 +11,9 @@ import {
 
 const reasons = [
   { icon: Users, text: "Trusted by 50+ institutions" },
-  { icon: Robot, text: "10+ years of expertise in robotics" },
+  { icon: Robot, text: "10+ years of expertise" },
   { icon: Globe, text: "Global collaborations" },
-  { icon: BookOpen, text: "Holistic learning approach" },
+  { icon: BookOpen, text: "Holistic learning" },
 ];
 export const WhyChooseUs = () => {
   return (
