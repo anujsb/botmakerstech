@@ -7,14 +7,14 @@ export function Header() {
     { name: "Home", link: "/" },
     { name: "Robo Playzone", link: "/" },
     { name: "InnoTech Academy", link: "/" },
-    { name: "Services", link: "/" },
+    { name: "Services", link: "/services" },
     
     {
       name: "Insights",
       link: "/",
     },
     { name: "About Us", link: "/about" },
-    { name: "Contact Us", link: "/about" },
+    { name: "Contact Us", link: "/contact" },
   ];
 
   return (

@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Rocket, Users, Shield, Star, Lightbulb, Globe } from "lucide-react";
 import { motion } from "framer-motion";
 import { Header } from "@/components/Sections/Header";
+import { Footer } from "@/components/Sections/Footer";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -89,7 +90,7 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="bg-[#ffffff] text-[#050315]">
+    <div className="bg-[#ffffff] text-[#050315] ">
       <Header />
       <motion.header
         className="bg-[#ff6101] text-white py-20 text-center relative overflow-hidden"
@@ -279,6 +280,7 @@ export default function AboutPage() {
           </motion.button>
         </div>
       </motion.section>
+      <Footer/>
     </div>
   );
 }
