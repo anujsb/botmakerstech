@@ -67,25 +67,25 @@ export default function AboutPage() {
       name: "Akshay Joshi",
       role: "CEO",
       bio: "Akshay Joshi, a visionary entrepreneur dedicated to advancing robotics through innovation and education. As the founder of BOTMAKERS, Tiltas Systems, and Technobotix, he has over 12 years of expertise in robotics, UAVs, and technology. Akshay also leads Blanka Botz, a nonprofit robotics club inspiring creativity and collaboration among aspiring minds. His journey is a testament to his passion for shaping the future of robotics.",
-      image: "/favicon.ico",
+      image: "/akshay-joshi.webp",
     },
     {
       name: "Mohit Chaudhari",
       role: "CFO",
       bio: "Mohit Chaudhari is a dynamic and accomplished professional with a Bachelor's degree in Mechanical Engineering and over 8 years of expertise in design engineering, robotics, manufacturing, finance, and international trade. His journey in robotics began in 2014, and since then, he has established himself as a force to be reckoned with, winning prestigious national and international championships, including FMB and COB. As a visionary leader, Mohit has held key roles such as Director, CFO, and CEO at Botmakers, Technobotix, and Tiltas Systems, where he has been instrumental in driving innovation, operational efficiency, and strategic growth. A proud member of the Blanka Botz Robotics Club, he continues to inspire and lead the next generation of roboticists, shaping the future of technology and automation.",
-      image: "/favicon.ico",
+      image: "/Mohit.webp",
     },
     {
       name: "Rahul Ishi",
       role: "COO",
       bio: "Rahul, a dedicated robotics enthusiast, is passionate about transforming education in robotics, UAVs, embedded systems, and AI. With a focus on practical, hands-on learning, he empowers students from kindergarten to postgraduate levels, bridging the gap between theory and industry needs. Committed to inclusivity, Rahul ensures access to quality education for all, nurturing future tech leaders and innovators. With around 10 years of experience in the Indian robotics community, starting from his undergraduate days, he also led a robotics club for approximately 4 years, fostering innovation and collaboration among aspiring engineers.",
-      image: "/favicon.ico",
+      image: "/Rahul.png",
     },
     {
       name: "Piyush N Jha",
       role: "CBO",
       bio: "Piyush N Jha, a passionate leader with 15 years of experience in driving business growth, enhancing operations, and mitigating risks. With a proven track record of leading companies to success, Piyush's last role as VP showcased his ability to align teams with company goals and lead by example. A tech and robotics enthusiast who returned from Europe with deep committed to making a positive impact on his motherland, India.",
-      image: "/favicon.ico",
+      image: "/piyush.jpeg",
     },
   ];
 
@@ -105,14 +105,14 @@ export default function AboutPage() {
           transition={{ duration: 1.5 }}
         >
           <Image
-            src="/favicon.ico?height=600&width=1600"
+            src="/logo-black.webp?height=600&width=1600"
             alt="Header background"
             layout="fill"
             objectFit="cover"
           />
         </motion.div>
         <motion.h1
-          className="text-5xl font-bold mb-4 relative z-10"
+          className="text-5xl font-bold mb-4 relative z-10 mt-10"
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
@@ -139,7 +139,7 @@ export default function AboutPage() {
               transition={{ duration: 0.3 }}
             >
               <Image
-                src="/favicon.ico?height=400&width=600"
+                src="/mission.jpg?height=400&width=600"
                 alt="Our Mission"
                 width={600}
                 height={400}
@@ -169,7 +169,7 @@ export default function AboutPage() {
                 transition={{ duration: 0.3 }}
               >
                 <Image
-                  src="/favicon.ico?height=400&width=600"
+                  src="/purpose.jpg?height=400&width=600"
                   alt="Our Purpose"
                   width={600}
                   height={400}

@@ -14,8 +14,8 @@ export default function Home() {
     <div className="text-center">
       <Header />
       <Hero />
-      {/* <QuickLinks /> */}
-      <Services />
+      <QuickLinks />
+      {/* <Services /> */}
       <WhyChooseUs />
       <SuccessStories />
       <Testimonials />

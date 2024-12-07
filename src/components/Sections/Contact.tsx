@@ -5,7 +5,7 @@ import { Send, Phone, Mail, MapPin } from "lucide-react";
 
 export const Contact = () => {
   return (
-    <section className="bg-orange-50 py-16 px-4 sm:px-6 lg:px-8 shadow-lg">
+    <section className="bg-orange-50 py-16 px-4 sm:px-6 lg:px-8 shadow-lg text-start">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-center mb-8">
           Get in Touch
