@@ -289,13 +289,13 @@ export default function InsightsPage() {
       <Dialog open={!!selectedBlog} onOpenChange={() => setSelectedBlog(null)}>
         <DialogContent className="max-w-3xl">
           <DialogHeader>
-            <DialogTitle>{selectedBlog?.title}</DialogTitle>
-            <DialogDescription>{new Date(selectedBlog?.date).toLocaleDateString()}</DialogDescription>
+          <DialogTitle>{selectedBlog?.title || 'Blog Details'}</DialogTitle>
+          <DialogDescription>{selectedBlog?.date ? new Date(selectedBlog.date).toLocaleDateString() : 'No date'}</DialogDescription>
           </DialogHeader>
           <ScrollArea className="max-h-[60vh]">
-            <Image
-              src={selectedBlog?.image}
-              alt={selectedBlog?.title}
+          <Image
+              src={selectedBlog?.image || '/favicon.ico'}
+              alt={selectedBlog?.title || 'Blog Image'}
               width={600}
               height={400}
               className="w-full h-auto object-cover rounded-lg mb-4"
@@ -311,9 +311,9 @@ export default function InsightsPage() {
             <DialogTitle>{selectedCaseStudy?.title}</DialogTitle>
           </DialogHeader>
           <ScrollArea className="max-h-[60vh]">
-            <Image
-              src={selectedCaseStudy?.image}
-              alt={selectedCaseStudy?.title}
+          <Image
+              src={selectedCaseStudy?.image || '/favicon.ico'}
+              alt={selectedCaseStudy?.title || 'Blog Image'}
               width={600}
               height={400}
               className="w-full h-auto object-cover rounded-lg mb-4"
