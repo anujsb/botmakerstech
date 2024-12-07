@@ -10,6 +10,34 @@ import { ScrollArea } from "@/components/ui/scroll-area"
 import { Calendar, FileText, BookOpen, ChevronRight } from 'lucide-react'
 import Image from 'next/image'
 
+
+// Define the type for blogs
+type Blog = {
+  title: string;
+  excerpt: string;
+  content: string;
+  date: string;
+  image: string;
+  category: string;
+}
+
+// Define the type for case studies
+type CaseStudy = {
+  title: string;
+  excerpt: string;
+  content: string;
+  results: string[];
+  image: string;
+}
+
+// Define the type for events
+type Event = {
+  name: string;
+  date: string;
+  image: string;
+  description: string;
+}
+
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
@@ -25,8 +53,8 @@ const stagger = {
 }
 
 export default function InsightsPage() {
-  const [selectedBlog, setSelectedBlog] = useState(null)
-  const [selectedCaseStudy, setSelectedCaseStudy] = useState(null)
+  const [selectedBlog, setSelectedBlog] = useState<Blog | null>(null)
+  const [selectedCaseStudy, setSelectedCaseStudy] = useState<CaseStudy | null>(null)
 
   const blogs = [
     {
