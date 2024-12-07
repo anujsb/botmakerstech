@@ -35,7 +35,7 @@ export default function ServicesPage() {
         "For Rent: Enjoy flexibility and variety for short-term events or specific activities.",
         "Turn your events into unforgettable experiences combining technology, engagement, and excitement.",
       ],
-      image: "/favicon.ico?height=300&width=400",
+      image: "/go2.png?height=300&width=400",
     },
     {
       title: "Workshop and Training",
@@ -47,7 +47,7 @@ export default function ServicesPage() {
         "Training Programs: Tailored modules to build expertise in robotics, programming, and advanced technologies.",
         "Empower minds, ignite curiosity, and embrace innovation.",
       ],
-      image: "/favicon.ico?height=300&width=400",
+      image: "/workshop.jpg?height=300&width=400",
     },
     {
       title: "Tech Event Planner",
@@ -105,14 +105,14 @@ export default function ServicesPage() {
           transition={{ duration: 1.5 }}
         >
           <Image
-            src="/favicon.ico?height=600&width=1600"
+            src="/logo-black.webp?height=600&width=1600"
             alt="Services header background"
             layout="fill"
             objectFit="cover"
           />
         </motion.div>
         <motion.h1
-          className="text-5xl font-bold mb-4 relative z-10"
+          className="text-5xl font-bold mb-4 relative z-10 mt-10"
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}

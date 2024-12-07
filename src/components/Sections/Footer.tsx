@@ -1,207 +1,197 @@
 import Link from "next/link";
-import { Facebook, Twitter, Instagram, Linkedin, Github } from "lucide-react";
 import Image from "next/image";
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+  Github,
+  Mail,
+  MapPin,
+} from "lucide-react";
 
 export const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
+  const socialLinks = [
+    {
+      icon: Facebook,
+      href: "https://facebook.com/botmakers",
+      label: "Facebook",
+    },
+    {
+      icon: Twitter,
+      href: "https://twitter.com/botmakers",
+      label: "Twitter",
+    },
+    {
+      icon: Instagram,
+      href: "https://instagram.com/botmakers",
+      label: "Instagram",
+    },
+    {
+      icon: Linkedin,
+      href: "https://linkedin.com/company/botmakers",
+      label: "LinkedIn",
+    },
+    {
+      icon: Github,
+      href: "https://github.com/botmakers",
+      label: "GitHub",
+    },
+  ];
+
+  const menuLinks = [
+    { label: "Home", href: "/" },
+    { label: "Robo Playzone", href: "/robo-playzone" },
+    { label: "InnoTech Academy", href: "/innotech-academy" },
+  ];
+
+  const companyLinks = [
+    { label: "About", href: "/about" },
+    { label: "Services", href: "/services" },
+    { label: "Insights", href: "/insights" },
+    { label: "Contact", href: "/contact" },
+  ];
+
+  const legalLinks = [
+    { label: "Privacy", href: "/privacy" },
+    { label: "Terms and Conditions", href: "/terms" },
+  ];
+
   return (
-    <footer className="">
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 ">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="space-y-8 xl:col-span-1">
-            <Link href="/" className="flex items-center">
+    <footer className="bg-gray-50 text-gray-800 text-start">
+      <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Brand and Social Links */}
+          <div className="space-y-6">
+            <Link href="/" className="inline-block">
               <Image
                 src="/logo-black.webp"
-                width={100}
-                height={70}
-                alt="logo"
-                className="rounded-lg"
+                width={120}
+                height={80}
+                alt="Botmakers Logo"
+                className="rounded-lg transition-transform hover:scale-105"
               />
             </Link>
-            {/* <p className="text-gray-400 text-base">
-              Making the world a better place through constructing elegant
-              hierarchies.
-            </p> */}
-            <div className="flex space-x-6">
-              <a href="#" className="text-gray-700 hover:text-black">
-                <span className="sr-only">Facebook</span>
-                <Facebook className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-gray-700 hover:text-black">
-                <span className="sr-only">Twitter</span>
-                <Twitter className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-gray-700 hover:text-black">
-                <span className="sr-only">Instagram</span>
-                <Instagram className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-gray-700 hover:text-black">
-                <span className="sr-only">LinkedIn</span>
-                <Linkedin className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-gray-700 hover:text-black">
-                <span className="sr-only">GitHub</span>
-                <Github className="h-6 w-6" />
-              </a>
+
+            <p className="text-gray-600 max-w-xs">
+              Innovating technology solutions to transform the future of
+              robotics and education.
+            </p>
+
+            <div className="flex space-x-4">
+              {socialLinks.map(({ icon: Icon, href, label }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-blue-600 transition-colors"
+                  aria-label={label}
+                >
+                  <Icon className="h-6 w-6" />
+                </a>
+              ))}
             </div>
           </div>
-          <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm font-semibold text-gray-700 tracking-wider uppercase">
-                  Menu
-                </h3>
-                <ul className="mt-4 space-y-4">
-                  <li>
+
+          {/* Navigation Links */}
+          <div className="grid grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-4">
+                Menu
+              </h3>
+              <ul className="space-y-2">
+                {menuLinks.map(({ label, href }) => (
+                  <li key={label}>
                     <Link
-                      href="#"
-                      className="text-base text-gray-500 hover:text-black"
+                      href={href}
+                      className="text-gray-600 hover:text-blue-600 transition-colors"
                     >
-                      Home
+                      {label}
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="text-base text-gray-500 hover:text-black"
-                    >
-                      Robo Playzone
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="text-base text-gray-500 hover:text-black"
-                    >
-                      InnoTech Academy
-                    </Link>
-                  </li>
-                  {/* <li>
-                    <Link
-                      href="#"
-                      className="text-base text-gray-500 hover:text-black"
-                    >
-                      Insights
-                    </Link>
-                  </li> */}
-                </ul>
-              </div>
-              {/* <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-gray-700 tracking-wider uppercase">
-                  Support
-                </h3>
-                <ul className="mt-4 space-y-4">
-                  <li>
-                    <Link
-                      href="#"
-                      className="text-base text-gray-500 hover:text-black"
-                    >
-                      Pricing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="text-base text-gray-500 hover:text-black"
-                    >
-                      Documentation
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="text-base text-gray-500 hover:text-black"
-                    >
-                      Guides
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="text-base text-gray-500 hover:text-black"
-                    >
-                      API Status
-                    </Link>
-                  </li>
-                </ul>
-              </div> */}
+                ))}
+              </ul>
             </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm font-semibold text-gray-700 tracking-wider uppercase">
-                  Company
-                </h3>
-                <ul className="mt-4 space-y-4">
-                  <li>
+
+            <div>
+              <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-4">
+                Company
+              </h3>
+              <ul className="space-y-2">
+                {companyLinks.map(({ label, href }) => (
+                  <li key={label}>
                     <Link
-                      href="/about"
-                      className="text-base text-gray-500 hover:text-black"
+                      href={href}
+                      className="text-gray-600 hover:text-blue-600 transition-colors"
                     >
-                      About
+                      {label}
                     </Link>
                   </li>
-                  <li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Legal and Contact */}
+          <div className=" grid grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-4">
+                Legal
+              </h3>
+              <ul className="space-y-2">
+                {legalLinks.map(({ label, href }) => (
+                  <li key={label}>
                     <Link
-                      href="#"
-                      className="text-base text-gray-500 hover:text-black"
+                      href={href}
+                      className="text-gray-600 hover:text-blue-600 transition-colors"
                     >
-                      Services
+                      {label}
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="text-base text-gray-500 hover:text-black"
-                    >
-                      Insights
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="text-base text-gray-500 hover:text-black"
-                    >
-                      Contact
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-gray-700 tracking-wider uppercase">
-                  Legal
-                </h3>
-                <ul className="mt-4 space-y-4">
-                  <li>
-                    <Link
-                      href="#"
-                      className="text-base text-gray-500 hover:text-black"
-                    >
-                      Privacy
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="text-base text-gray-500 hover:text-black"
-                    >
-                      Terms and Conditions
-                    </Link>
-                  </li>
-                </ul>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-4">
+                Contact
+              </h3>
+              <div className="space-y-2 text-gray-600">
+                <div className="flex items-center space-x-2">
+                  <Mail className="h-5 w-5" />
+                  <span>contact@botmakerstech.in</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <MapPin className="h-5 w-5" />
+                  <span>Baner, Pune, Maharashtra</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="mt-12 border-t border-gray-700 pt-8">
-          <p className="text-base text-gray-700 xl:text-center">
-            &copy; 2024 Botmakers, Inc. All rights reserved.
-            <span className="text-base text-gray-700 xl:text-center hover:text-blue-700 font-semi hover:underline">
-              <Link href="https://www.21bubbles.com/">
-                Website by 21bubbles
-              </Link>
-            </span>
+
+        {/* Copyright */}
+        <div className="mt-12 pt-8 border-t border-gray-200 text-center">
+          <p className="text-sm text-gray-600">
+            &copy; {currentYear} Botmakers, Inc. All rights reserved.
+          </p>
+          <p className="mt-2 text-sm text-gray-600">
+            Website by{" "}
+            <Link
+              href="https://www.21bubbles.com"
+              className="text-blue-600 hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              21bubbles
+            </Link>
           </p>
         </div>
       </div>
     </footer>
   );
 };
+
+export default Footer;

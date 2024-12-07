@@ -11,7 +11,7 @@ export function Header() {
     
     {
       name: "Insights",
-      link: "/",
+      link: "/insights",
     },
     { name: "About Us", link: "/about" },
     { name: "Contact Us", link: "/contact" },

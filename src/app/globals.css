@@ -82,3 +82,38 @@ body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+
+
+@keyframes slide-forward {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes slide-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-infinite-slider-forward {
+  animation: slide-forward 30s linear infinite;
+  width: 200%; /* Double the width to accommodate two sets of items */
+}
+
+.animate-infinite-slider-reverse {
+  animation: slide-reverse 30s linear infinite;
+  width: 200%; /* Double the width to accommodate two sets of items */
+}
+
+.animate-infinite-slider-forward:hover,
+.animate-infinite-slider-reverse:hover {
+  animation-play-state: paused;
+}

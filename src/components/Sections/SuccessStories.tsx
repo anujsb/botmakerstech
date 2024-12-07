@@ -87,4 +87,28 @@ const data = [
     src: "/stories4.jpg",
     content: <div>more descriptions</div>,
   },
+  {
+    category: "National Robotics Championship",
+    title: "Our team won first place in the advanced category",
+    src: "/stories1.jpg",
+    content: <div>more descriptions</div>,
+  },
+  {
+    category: "International AI Conference",
+    title: "BotMakers presented innovative ML algorithms",
+    src: "/stories2.jpg",
+    content: <div>more descriptions</div>,
+  },
+  {
+    category: "STEM Education Expo",
+    title: "Showcased our comprehensive learning programs",
+    src: "/stories3.jpg",
+    content: <div>more descriptions</div>,
+  },
+  {
+    category: "National Robotics Championship",
+    title: "Our team won first place in the advanced category",
+    src: "/stories4.jpg",
+    content: <div>more descriptions</div>,
+  },
 ];

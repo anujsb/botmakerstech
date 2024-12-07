@@ -6,7 +6,7 @@ import { Hero } from "@/components/Sections/Hero";
 import { QuickLinks } from "@/components/Sections/QuickLinks";
 import { Services } from "@/components/Sections/Services";
 import { SuccessStories } from "@/components/Sections/SuccessStories";
-import { Testimonials } from "@/components/Sections/Testimonials";
+import Testimonials  from "@/components/Sections/Testimonials";
 import { WhyChooseUs } from "@/components/Sections/WhyChooseUs";
 
 export default function Home() {
