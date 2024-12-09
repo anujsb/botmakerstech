@@ -16,6 +16,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { Calendar, FileText, BookOpen, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { Header } from "@/components/Sections/Header";
+import Footer from "@/components/Sections/Footer";
 
 // Define the type for blogs
 type Blog = {
@@ -31,7 +32,7 @@ type Blog = {
 type CaseStudy = {
   title: string;
   excerpt: string;
-  content: string;
+  content: JSX.Element;
   results: string[];
   image: string;
 };
@@ -362,8 +363,131 @@ export default function InsightsPage() {
         "The Future of Edutainment Why Robotics Play Zones Are Here to Stay",
       excerpt:
         "How Botmakers Pvt. Ltd. partnered with the state government to bring cutting-edge technology education to underserved areas.",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      content: (
+        <div>
+          <section>
+            <h2 className="text-2xl font-semibold text-gray-800">
+              The Need of the Hour for India
+            </h2>
+            <ul className="list-inside list-disc space-y-2 mt-4">
+              <li>
+                <strong>Bridging the Skills Gap:</strong> India faces a
+                significant skills gap in STEM fields. Robotics play zones can
+                help bridge this gap by providing practical, hands-on exposure
+                to advanced technologies like robotics, AI, and IoT.
+              </li>
+              <li>
+                <strong>Inspiring Innovation from a Young Age:</strong> Robotics
+                play zones encourage creativity and problem-solving, which are
+                vital for a tech-driven future.
+              </li>
+              <li>
+                <strong>Preparing for the Fourth Industrial Revolution:</strong>{" "}
+                Introducing young Indians to emerging technologies ensures they
+                are ready for automation and AI-powered industries.
+              </li>
+              <li>
+                <strong>Inclusivity in Education:</strong> Robotics play zones
+                can democratize access to STEM learning by bringing interactive,
+                technology-driven experiences to schools and communities
+                nationwide.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-gray-800">
+              Global Success Stories and Lessons for India
+            </h2>
+            <p className="mt-4 text-lg text-gray-600">
+              Robotics play zones have already proven successful in countries
+              like Japan, South Korea, the USA, and China. Here are some lessons
+              India can learn from these global examples:
+            </p>
+            <ul className="list-inside list-disc space-y-2 mt-4">
+              <li>
+                <strong>Japan:</strong> Integrating robotics into daily life,
+                Japan offers robotics play zones in museums and public spaces to
+                introduce people to cutting-edge technology.
+              </li>
+              <li>
+                <strong>South Korea:</strong> South Korea’s government has made
+                robotics play zones a part of their education policies, ensuring
+                that STEM education reaches all sectors of society.
+              </li>
+              <li>
+                <strong>The USA:</strong> Science museums and robotics
+                initiatives, often supported by government funding, showcase the
+                role of institutions in fostering STEM education.
+              </li>
+              <li>
+                <strong>China:</strong> With robotics play zones in schools and
+                public spaces, China has successfully made STEM accessible to
+                millions of students across the country.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-gray-800">
+              Botmakers Pvt. Ltd. and Our Mission
+            </h2>
+            <p className="mt-4 text-lg text-gray-600">
+              At Botmakers Pvt. Ltd., we are committed to revolutionizing
+              education in India by blending learning with fun and innovation.
+              Our initiatives are designed to inspire curiosity, foster
+              creativity, and equip the youth with the skills needed for
+              tomorrow's technological world.
+            </p>
+            <ul className="list-inside list-disc space-y-2 mt-4">
+              <li>
+                <strong>Engaging and Interactive Workshops:</strong> We offer
+                activities like drone racing and robot soccer that make learning
+                STEM both fun and effective.
+              </li>
+              <li>
+                <strong>Hands-On Learning:</strong> Students get practical
+                exposure to real equipment, including robotics kits and IoT
+                devices, ensuring they apply their knowledge in real-world
+                settings.
+              </li>
+              <li>
+                <strong>Accessibility and Inclusion:</strong> Our mission is to
+                make robotics education accessible to all, regardless of
+                background, by collaborating with schools and communities across
+                India.
+              </li>
+              <li>
+                <strong>Fostering Innovation:</strong> We continuously develop
+                new educational kits and robotics games to empower students to
+                think creatively and solve real-world challenges.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-gray-800">
+              The Way Forward
+            </h2>
+            <p className="mt-4 text-lg text-gray-600">
+              India’s journey toward becoming a global technology leader
+              requires a focus on STEM education. Robotics play zones provide an
+              engaging, scalable solution to equip the next generation with the
+              necessary skills for the future. By making learning fun and
+              interactive, these play zones are shaping a generation of
+              innovators and creators.
+            </p>
+          </section>
+
+          <footer className="text-center mt-8 text-gray-600">
+            <p>
+              For more insights into robotics in education, refer to resources
+              from the National Science Foundation and case studies on global
+              robotics education models.
+            </p>
+          </footer>
+        </div>
+      ),
       results: [
         "Reached 500+ schools",
         "Trained 1000+ teachers",
@@ -391,7 +515,7 @@ export default function InsightsPage() {
   ];
 
   return (
-    <div className="bg-[#ffffff] text-[#050315]">
+    <div className="bg-[#ffffff] text-[#050315] text-justify">
       <Header />
       <motion.header
         className="bg-[#ff6101] text-white py-24 text-center relative overflow-hidden"
@@ -406,7 +530,7 @@ export default function InsightsPage() {
           transition={{ duration: 1.5 }}
         >
           <Image
-            src="/favicon.ico?height=800&width=1600"
+            src="/logo-black.webp"
             alt="Insights header background"
             layout="fill"
             objectFit="cover"
@@ -561,7 +685,7 @@ export default function InsightsPage() {
         </div>
       </motion.section>
 
-      <motion.section className="bg-[#ff6101] text-white py-16" {...fadeIn}>
+      {/* <motion.section className="bg-[#ff6101] text-white py-16" {...fadeIn}>
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-8">Stay Informed</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
@@ -580,7 +704,7 @@ export default function InsightsPage() {
             </Button>
           </form>
         </div>
-      </motion.section>
+      </motion.section> */}
 
       <Dialog
         open={selectedBlog !== null}
@@ -634,6 +758,7 @@ export default function InsightsPage() {
           </ScrollArea>
         </DialogContent>
       </Dialog>
+      <Footer />
     </div>
   );
 }
