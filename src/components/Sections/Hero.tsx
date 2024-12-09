@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { LampContainer } from "../ui/lamp";
 import { Button } from "../ui/button";
 import Video from "./Video";
+import Link from "next/link";
 
 export const Hero = () => {
   return (
@@ -26,10 +27,12 @@ export const Hero = () => {
           innovation, and collaboration.
         </p>
         <div className="flex mt-6 gap-4 items-center justify-center">
+          <Link href="/about">
           <Button variant="default" className="text-white font-semibold">
-            Action
+            Know More
           </Button>
-          <p>Explore Programs</p>
+          </Link>
+          {/* <p>Explore Programs</p> */}
         </div>
       </LampContainer>
       

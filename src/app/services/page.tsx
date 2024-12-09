@@ -204,7 +204,7 @@ export default function ServicesPage() {
                       alt={service.title}
                       width={600}
                       height={400}
-                      className="rounded-lg shadow-md w-full max-h-72 object-contain "
+                      className="rounded-lg shadow-md w-full max-h-72 object-contain"
                     />
                   </motion.div>
                 </CardContent>
@@ -214,7 +214,7 @@ export default function ServicesPage() {
         </div>
       </motion.section>
 
-      <motion.section className="bg-[#fbdbcb] py-16" {...fadeIn}>
+      {/* <motion.section className="bg-[#fbdbcb] py-16" {...fadeIn}>
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12">
             Upcoming Tech Events
@@ -258,7 +258,7 @@ export default function ServicesPage() {
             ))}
           </div>
         </div>
-      </motion.section>
+      </motion.section> */}
 
       <motion.section className="bg-[#f5f5f5] py-16" {...fadeIn}>
         <div className="container mx-auto px-4 text-center">
