@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ShoppingCart, Book, Calendar, Trophy } from "lucide-react";
+import { ShoppingCart, Book, Calendar, Trophy, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { Header } from "@/components/Sections/Header";
 import { Footer } from "@/components/Sections/Footer";
@@ -27,52 +27,71 @@ export default function ServicesPage() {
   const services = [
     {
       title: "Robotics Games Sale & Rent",
-      icon: <ShoppingCart className="w-6 h-6" />,
+      icon: <ShoppingCart className="w-8 h-8 text-[#ff6101]" />,
       description:
-        "Explore the world of interactive technology with our Robotics Games Sales & Rent Services! Perfect for school events, corporate gatherings, or community celebrations.",
+        "Transform your events with cutting-edge interactive technology through our Robotics Games Sales & Rent Services.",
       details: [
-        "For Sales: Add a permanent tech-savvy edge to your events or facilities.",
-        "For Rent: Enjoy flexibility and variety for short-term events or specific activities.",
-        "Turn your events into unforgettable experiences combining technology, engagement, and excitement.",
+        "Permanent tech solutions for venues and events",
+        "Flexible rental options for short-term engagements",
+        "Unique experiences that blend technology and entertainment",
       ],
       image: "/go2.png",
+      benefits: [
+        "Engaging Interactive Experiences",
+        "Customizable Tech Solutions",
+        "Memorable Event Activations",
+      ],
     },
     {
-      title: "Workshop and Training",
-      icon: <Book className="w-6 h-6" />,
+      title: "Workshops and Training",
+      icon: <Book className="w-8 h-8 text-[#ff6101]" />,
       description:
-        "Unlock the power of innovation with our Robotics and Technology Workshop & Training programs! Designed for students, educators, and professionals.",
+        "Unleash the potential of emerging technologies through our comprehensive Robotics and Technology Learning Programs.",
       details: [
-        "Workshops: Hands-on sessions introducing robotics, coding, and emerging technologies.",
-        "Training Programs: Tailored modules to build expertise in robotics, programming, and advanced technologies.",
-        "Empower minds, ignite curiosity, and embrace innovation.",
+        "Immersive hands-on workshops for all skill levels",
+        "Customized training modules in robotics and programming",
+        "Expert-led sessions bridging theory and practical application",
       ],
       image: "/workshop.jpg",
+      benefits: [
+        "Skill Development",
+        "Industry-Relevant Expertise",
+        "Future-Ready Learning",
+      ],
     },
     {
-      title: "Tech Event Planner",
-      icon: <Calendar className="w-6 h-6" />,
+      title: "Tech Event Planning",
+      icon: <Calendar className="w-8 h-8 text-[#ff6101]" />,
       description:
-        "Transform your events into extraordinary tech-powered experiences! Suitable for corporate gatherings, school/college festivals, mall activations, or private celebrations.",
+        "Elevate your events with our innovative tech-powered experiences, tailored for diverse audiences and venues.",
       details: [
-        "Corporate Events: Impress with cutting-edge tech showcases and interactive displays.",
-        "School & College Festivals: Inspire young minds with fun and educational tech exhibits.",
-        "Malls & Public Spaces: Drive engagement with unique tech zones and immersive experiences.",
-        "Private Events: Elevate celebrations with personalized tech-based entertainment.",
+        "Cutting-edge tech showcases for corporate environments",
+        "Interactive exhibits for educational institutions",
+        "Customized tech zones for public spaces and private events",
       ],
-      image: "/favicon.ico",
+      image: "/mission.jpg",
+      benefits: [
+        "Unique Event Experiences",
+        "Technology Engagement",
+        "Memorable Interactions",
+      ],
     },
     {
-      title: "Competitions",
-      icon: <Trophy className="w-6 h-6" />,
+      title: "Robotics Competitions",
+      icon: <Trophy className="w-8 h-8 text-[#ff6101]" />,
       description:
-        "We organize inter-college, state-level, and national robotics competitions.",
+        "Cultivate innovation and competitive spirit through our inter-college, state-level, and national robotics competitions.",
       details: [
-        "Foster innovation and healthy competition among aspiring roboticists.",
-        "Provide a platform for showcasing cutting-edge robotics projects.",
-        "Encourage collaboration and knowledge sharing in the field of robotics.",
+        "Platform for showcasing cutting-edge robotics projects",
+        "Networking opportunities for aspiring technologists",
+        "Encouraging collaborative learning and innovation",
       ],
-      image: "/favicon.ico",
+      image: "/purpose.jpg",
+      benefits: [
+        "Innovation Showcase",
+        "Skill Validation",
+        "Community Building",
+      ],
     },
   ];
 
@@ -80,17 +99,19 @@ export default function ServicesPage() {
     {
       name: "Techfest, IIT Bombay",
       date: "17 to 19 Dec 2024",
-      image: "/favicon.ico?height=200&width=300",
+      image: "/techfest.jpg",
+      description: "India's largest science and technology festival",
     },
     {
       name: "Technovanza – VJTI Mumbai",
       date: "21 to 23 Dec 2024",
-      image: "/favicon.ico?height=200&width=300",
+      image: "/technovanza.jpg",
+      description: "Annual technical extravaganza of VJTI",
     },
   ];
 
   return (
-    <div className="bg-[#ffffff] text-[#050315] text-justify">
+    <div className="bg-[#ffffff] text-[#050315]">
       <Header />
       <motion.header
         className="bg-[#ff6101] text-white py-20 text-center relative overflow-hidden"
@@ -105,8 +126,8 @@ export default function ServicesPage() {
           transition={{ duration: 1.5 }}
         >
           <Image
-            src="/logo-black.webp?height=600&width=1600"
-            alt="Services header background"
+            src="/logo-black.webp"
+            alt="Header background"
             layout="fill"
             objectFit="cover"
           />
@@ -125,7 +146,7 @@ export default function ServicesPage() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.8 }}
         >
-          Empowering Innovation Through Technology
+          Transforming Ideas into Technological Realities
         </motion.p>
       </motion.header>
 
@@ -135,40 +156,57 @@ export default function ServicesPage() {
         initial="initial"
         animate="animate"
       >
-        <div className="grid grid-cols-1 gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 ">
           {services.map((service, index) => (
-            <motion.div key={index} variants={fadeIn}>
-              <Card className="bg-[#f5f5f5] border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-3 text-[#ff6101] text-3xl">
+            <motion.div key={index} variants={fadeIn} className="group">
+              <Card className="bg-[#f5f5f5] border-none shadow-lg hover:shadow-xl transition-all duration-300 h-full overflow-hidden">
+                <CardHeader className="pb-4">
+                  <CardTitle className="flex items-center gap-4 text-[#ff6101]">
                     {service.icon}
-                    <span>{service.title}</span>
+                    <span className="text-2xl">{service.title}</span>
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <div className="flex flex-col md:flex-row gap-8">
-                    <div className="">
-                      <p className="mb-4 text-lg">{service.description}</p>
-                      <ul className="list-disc pl-5 space-y-2">
+                <CardContent className="flex flex-col h-full">
+                  <p className="text-lg mb-4 flex-grow">
+                    {service.description}
+                  </p>
+
+                  <div className="grid md:grid-cols-2 gap-4 mb-4">
+                    <div>
+                      <h4 className="font-semibold mb-2 text-[#ff6101]">
+                        Key Details
+                      </h4>
+                      <ul className="list-disc list-inside text-sm space-y-1">
                         {service.details.map((detail, idx) => (
                           <li key={idx}>{detail}</li>
                         ))}
                       </ul>
                     </div>
-                    <motion.div
-                      className=""
-                      whileHover={{ scale: 1.05 }}
-                      transition={{ duration: 0.3 }}
-                    >
-                      <Image
-                        src={service.image}
-                        alt={service.title}
-                        width={400}
-                        height={300}
-                        className="rounded-lg shadow-md w-full h-auto"
-                      />
-                    </motion.div>
+                    <div>
+                      <h4 className="font-semibold mb-2 text-[#ff6101]">
+                        Benefits
+                      </h4>
+                      <ul className="list-disc list-inside text-sm space-y-1">
+                        {service.benefits.map((benefit, idx) => (
+                          <li key={idx}>{benefit}</li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
+
+                  <motion.div
+                    className="mt-4"
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      width={600}
+                      height={400}
+                      className="rounded-lg shadow-md w-full max-h-72 object-contain "
+                    />
+                  </motion.div>
                 </CardContent>
               </Card>
             </motion.div>
@@ -179,7 +217,7 @@ export default function ServicesPage() {
       <motion.section className="bg-[#fbdbcb] py-16" {...fadeIn}>
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12">
-            Upcoming Events and Workshops
+            Upcoming Tech Events
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {upcomingEvents.map((event, index) => (
@@ -188,19 +226,32 @@ export default function ServicesPage() {
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
               >
-                <Card className="bg-white border-none shadow-lg overflow-hidden">
+                <Card className="bg-white border-none shadow-lg overflow-hidden h-full">
                   <Image
                     src={event.image}
                     alt={event.name}
-                    width={300}
-                    height={200}
-                    className="w-full h-48 object-cover"
+                    width={600}
+                    height={400}
+                    className="w-full h-64 object-cover"
                   />
                   <CardContent className="p-6">
-                    <h3 className="text-2xl font-semibold mb-2">
-                      {event.name}
-                    </h3>
-                    <p className="text-[#ff6101] font-medium">{event.date}</p>
+                    <div className="flex justify-between items-center mb-2">
+                      <h3 className="text-2xl font-semibold">{event.name}</h3>
+                      <Badge
+                        variant="secondary"
+                        className="bg-[#fbdbcb] text-[#ff6101]"
+                      >
+                        {event.date}
+                      </Badge>
+                    </div>
+                    <p className="text-gray-600">{event.description}</p>
+                    <motion.div
+                      className="flex items-center text-[#ff6101] mt-4 hover:underline cursor-pointer"
+                      whileHover={{ x: 5 }}
+                    >
+                      <span className="mr-2">Learn More</span>
+                      <ArrowRight className="w-5 h-5" />
+                    </motion.div>
                   </CardContent>
                 </Card>
               </motion.div>
@@ -212,13 +263,18 @@ export default function ServicesPage() {
       <motion.section className="bg-[#f5f5f5] py-16" {...fadeIn}>
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-8">Ready to Innovate?</h2>
-          <p className="text-xl mb-8">
-            Explore our services and take the first step towards a tech-powered
-            future.
+          <p className="text-xl mb-8 max-w-2xl mx-auto">
+            Take the first step towards transforming your ideas into
+            technological breakthrough. Connect with our team and explore the
+            possibilities.
           </p>
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Button className="bg-[#ff6101] text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-[#ff6101]/90 transition-colors duration-300">
-              Contact Us
+            <Button
+              className="bg-[#ff6101] text-white px-10 py-4 rounded-full text-lg font-semibold 
+              hover:bg-[#ff6101]/90 transition-colors duration-300 flex items-center gap-3 mx-auto"
+            >
+              <span>Contact Us</span>
+              <ArrowRight className="w-6 h-6" />
             </Button>
           </motion.div>
         </div>

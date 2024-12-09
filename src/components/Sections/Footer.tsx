@@ -5,7 +5,7 @@ import {
   Twitter,
   Instagram,
   Linkedin,
-  Github,
+  Youtube,
   Mail,
   MapPin,
 } from "lucide-react";
@@ -35,7 +35,7 @@ export const Footer = () => {
       label: "LinkedIn",
     },
     {
-      icon: Github,
+      icon: Youtube,
       href: "https://github.com/botmakers",
       label: "GitHub",
     },
@@ -48,7 +48,7 @@ export const Footer = () => {
   ];
 
   const companyLinks = [
-    { label: "About", href: "/about" },
+    { label: "About Us", href: "/about" },
     { label: "Services", href: "/services" },
     { label: "Insights", href: "/insights" },
     { label: "Contact", href: "/contact" },
@@ -159,12 +159,12 @@ export const Footer = () => {
                 Contact
               </h3>
               <div className="space-y-2 text-gray-600">
-                <div className="flex items-center space-x-2">
-                  <Mail className="h-5 w-5" />
+                <div className="flex items-center space-x-2 text-center text-xs">
+                  <Mail className="h-4 w-4" />
                   <span>contact@botmakerstech.in</span>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <MapPin className="h-5 w-5" />
+                <div className="flex items-center space-x-2 text-center text-xs">
+                  <MapPin className="h-4 w-4" />
                   <span>Baner, Pune, Maharashtra</span>
                 </div>
               </div>
