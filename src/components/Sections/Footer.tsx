@@ -16,7 +16,7 @@ export const Footer = () => {
   const socialLinks = [
     {
       icon: Facebook,
-      href: "https://facebook.com/botmakers",
+      href: "https://www.facebook.com/BotMakersoff",
       label: "Facebook",
     },
     {
@@ -26,12 +26,12 @@ export const Footer = () => {
     },
     {
       icon: Instagram,
-      href: "https://instagram.com/botmakers",
+      href: "https://www.instagram.com/bot_makers_/profilecard/?igsh=MWc2Mm1mcm80cmx0dQ==",
       label: "Instagram",
     },
     {
       icon: Linkedin,
-      href: "https://linkedin.com/company/botmakers",
+      href: "https://www.linkedin.com/company/botmakers-pvt/",
       label: "LinkedIn",
     },
     {
