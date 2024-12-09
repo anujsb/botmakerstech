@@ -35,7 +35,7 @@ export default function ServicesPage() {
         "For Rent: Enjoy flexibility and variety for short-term events or specific activities.",
         "Turn your events into unforgettable experiences combining technology, engagement, and excitement.",
       ],
-      image: "/go2.png?height=300&width=400",
+      image: "/go2.png",
     },
     {
       title: "Workshop and Training",
@@ -47,7 +47,7 @@ export default function ServicesPage() {
         "Training Programs: Tailored modules to build expertise in robotics, programming, and advanced technologies.",
         "Empower minds, ignite curiosity, and embrace innovation.",
       ],
-      image: "/workshop.jpg?height=300&width=400",
+      image: "/workshop.jpg",
     },
     {
       title: "Tech Event Planner",
@@ -60,7 +60,7 @@ export default function ServicesPage() {
         "Malls & Public Spaces: Drive engagement with unique tech zones and immersive experiences.",
         "Private Events: Elevate celebrations with personalized tech-based entertainment.",
       ],
-      image: "/favicon.ico?height=300&width=400",
+      image: "/favicon.ico",
     },
     {
       title: "Competitions",
@@ -72,7 +72,7 @@ export default function ServicesPage() {
         "Provide a platform for showcasing cutting-edge robotics projects.",
         "Encourage collaboration and knowledge sharing in the field of robotics.",
       ],
-      image: "/favicon.ico?height=300&width=400",
+      image: "/favicon.ico",
     },
   ];
 
@@ -147,7 +147,7 @@ export default function ServicesPage() {
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-col md:flex-row gap-8">
-                    <div className="md:w-1/2">
+                    <div className="">
                       <p className="mb-4 text-lg">{service.description}</p>
                       <ul className="list-disc pl-5 space-y-2">
                         {service.details.map((detail, idx) => (
@@ -156,7 +156,7 @@ export default function ServicesPage() {
                       </ul>
                     </div>
                     <motion.div
-                      className="md:w-1/2"
+                      className=""
                       whileHover={{ scale: 1.05 }}
                       transition={{ duration: 0.3 }}
                     >
