@@ -8,6 +8,8 @@ import { ShoppingCart, Book, Calendar, Trophy, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { Header } from "@/components/Sections/Header";
 import { Footer } from "@/components/Sections/Footer";
+import { Header2 } from "@/components/Sections/Header2";
+import Link from "next/link";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -35,7 +37,7 @@ export default function ServicesPage() {
         "Flexible rental options for short-term engagements",
         "Unique experiences that blend technology and entertainment",
       ],
-      image: "/go2.png",
+      image: "/service1.png",
       benefits: [
         "Engaging Interactive Experiences",
         "Customizable Tech Solutions",
@@ -112,7 +114,7 @@ export default function ServicesPage() {
 
   return (
     <div className="bg-[#ffffff] text-[#050315]">
-      <Header />
+      <Header2 />
       <motion.header
         className="bg-[#ff6101] text-white py-20 text-center relative overflow-hidden"
         initial={{ opacity: 0 }}
@@ -162,12 +164,25 @@ export default function ServicesPage() {
               <Card className="bg-[#f5f5f5] border-none shadow-lg hover:shadow-xl transition-all duration-300 h-full overflow-hidden">
                 <CardHeader className="pb-4">
                   <CardTitle className="flex items-center gap-4 text-[#ff6101]">
-                    {service.icon}
+                    {/* {service.icon} */}
                     <span className="text-2xl">{service.title}</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="flex flex-col h-full">
-                  <p className="text-lg mb-4 flgrowex-">
+                  <motion.div
+                    className="mt-4"
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      width={600}
+                      height={400}
+                      className="rounded-lg shadow-md w-full max-h-72 object-contain"
+                    />
+                  </motion.div>
+                  <p className="text-lg mt-4 flgrowex-">
                     {service.description}
                   </p>
 
@@ -193,20 +208,6 @@ export default function ServicesPage() {
                       </ul>
                     </div>
                   </div>
-
-                  <motion.div
-                    className="mt-4"
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <Image
-                      src={service.image}
-                      alt={service.title}
-                      width={600}
-                      height={400}
-                      className="rounded-lg shadow-md w-full max-h-72 object-contain"
-                    />
-                  </motion.div>
                 </CardContent>
               </Card>
             </motion.div>
@@ -262,20 +263,22 @@ export default function ServicesPage() {
 
       <motion.section className="bg-[#f5f5f5] py-16" {...fadeIn}>
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-8">Ready to Innovate?</h2>
+          <h2 className="text-4xl font-bold mb-8">Connect With Us</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Take the first step towards transforming your ideas into
             technological breakthrough. Connect with our team and explore the
             possibilities.
           </p>
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Button
-              className="bg-[#ff6101] text-white px-10 py-4 rounded-full text-lg font-semibold 
+            <Link href="/contact">
+              <Button
+                className="bg-[#ff6101] text-white px-10 py-4 rounded-full text-lg font-semibold 
               hover:bg-[#ff6101]/90 transition-colors duration-300 flex items-center gap-3 mx-auto"
-            >
-              <span>Contact Us</span>
-              <ArrowRight className="w-6 h-6" />
-            </Button>
+              >
+                <span>Contact Us</span>
+                <ArrowRight className="w-6 h-6" />
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </motion.section>

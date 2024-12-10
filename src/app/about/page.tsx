@@ -3,11 +3,13 @@
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Rocket, Users, Shield, Star, Lightbulb, Globe, Linkedin } from "lucide-react";
+import { Rocket, Users, Shield, Star, Lightbulb, Globe, Linkedin, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { Header } from "@/components/Sections/Header";
 import { Footer } from "@/components/Sections/Footer";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Header2 } from "@/components/Sections/Header2";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -68,14 +70,14 @@ export default function AboutPage() {
       name: "Akshay Joshi",
       role: "CEO",
       bio: "Akshay Joshi, a visionary entrepreneur dedicated to advancing robotics through innovation and education. As the founder of BOTMAKERS, Tiltas Systems, and Technobotix, he has over 12 years of expertise in robotics, UAVs, and technology. Akshay also leads Blanka Botz, a nonprofit robotics club inspiring creativity and collaboration among aspiring minds. His journey is a testament to his passion for shaping the future of robotics.",
-      image: "/akshay-joshi.webp",
+      image: "/Akshay.png",
       linkedin: "https://www.linkedin.com/in/akshay-joshi-1946a171",
     },
     {
       name: "Mohit Chaudhari",
       role: "CFO",
       bio: "Mohit Chaudhari is a dynamic and accomplished professional with a Bachelor's degree in Mechanical Engineering and over 8 years of expertise in design engineering, robotics, manufacturing, finance, and international trade. His journey in robotics began in 2014, and since then, he has established himself as a force to be reckoned with, winning prestigious national and international championships, including FMB and COB. As a visionary leader, Mohit has held key roles such as Director, CFO, and CEO at Botmakers, Technobotix, and Tiltas Systems, where he has been instrumental in driving innovation, operational efficiency, and strategic growth. A proud member of the Blanka Botz Robotics Club, he continues to inspire and lead the next generation of roboticists, shaping the future of technology and automation.",
-      image: "/Mohit.webp",
+      image: "/mohit-chaudhari.webp",
       linkedin: "https://www.linkedin.com/in/mohit-chaudhari-7599a414b",
     },
     {
@@ -96,7 +98,7 @@ export default function AboutPage() {
 
   return (
     <div className="bg-[#ffffff] text-[#050315] text-justify">
-      <Header />
+      <Header2 />
       <motion.header
         className="bg-[#ff6101] text-white py-20 text-center relative overflow-hidden"
         initial={{ opacity: 0 }}
@@ -243,7 +245,7 @@ export default function AboutPage() {
                         alt={leader.name}
                         layout="fill"
                         objectFit="cover"
-                        className="absolute inset-0"
+                        className="absolute inset-0 rounded-xl"
                       />
                     </div>
                     <CardContent className="md:w-2/3 p-6 flex flex-col justify-between">
@@ -280,21 +282,25 @@ export default function AboutPage() {
         </div>
       </motion.section>
 
-      <motion.section className="bg-[#ff6101] text-white py-16" {...fadeIn}>
+      <motion.section className="bg-[#f5f5f5] py-16" {...fadeIn}>
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-8">
-            Join Us in Shaping the Future
-          </h2>
-          <p className="text-xl mb-8">
-            Be part of the innovation journey with Botmakers Pvt. Ltd.
+          <h2 className="text-4xl font-bold mb-8">Connect With Us</h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto">
+            Take the first step towards transforming your ideas into
+            technological breakthrough. Connect with our team and explore the
+            possibilities.
           </p>
-          <motion.button
-            className="bg-white text-[#ff6101] px-8 py-3 rounded-full text-lg font-semibold hover:bg-[#fbdbcb] transition-colors duration-300"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Get Started
-          </motion.button>
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <Link href="/contact">
+              <Button
+                className="bg-[#ff6101] text-white px-10 py-4 rounded-full text-lg font-semibold 
+              hover:bg-[#ff6101]/90 transition-colors duration-300 flex items-center gap-3 mx-auto"
+              >
+                <span>Contact Us</span>
+                <ArrowRight className="w-6 h-6" />
+              </Button>
+            </Link>
+          </motion.div>
         </div>
       </motion.section>
       <Footer />

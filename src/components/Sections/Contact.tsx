@@ -5,7 +5,7 @@ import { Send, Phone, Mail, MapPin } from "lucide-react";
 
 export const Contact = () => {
   return (
-    <section className="bg-orange-50 py-16 px-4 sm:px-6 lg:px-8 shadow-lg text-start">
+    <section className="bg-white py-16 px-4 sm:px-6 lg:px-8  text-start">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-center mb-8">
           Get in Touch
@@ -93,14 +93,15 @@ export const Contact = () => {
                     contact@botmakerstech.in
                   </a>
                 </div>
-                {/* <div className="flex items-start">
+                <div className="flex items-start">
                   <MapPin className="h-5 w-5 text-gray-400 mr-2 mt-1" />
                   <address className="not-italic">
-                    Sr no 80, Ganranj Mangal Karyalay, Manik Padma Smruti,<br/> Plot
-                    no 13, near Ness Digital Engineering, Lalit Estate,<br/> Baner,
-                    Pune, Maharashtra 411045
+                    Sr no 80, Ganranj Mangal Karyalay, Manik Padma Smruti,
+                    <br /> Plot no 13, near Ness Digital Engineering, Lalit
+                    Estate,
+                    <br /> Baner, Pune, Maharashtra 411045
                   </address>
-                </div> */}
+                </div>
               </div>
             </div>
             <div>
@@ -109,7 +110,7 @@ export const Contact = () => {
               </h3>
               <div className="aspect-w-16 aspect-h-9">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d567338.2598533918!2d73.777274!3d18.562536!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf3520496b5f%3A0xee34e55c54da61d2!2sBotMakers!5e1!3m2!1sen!2sus!4v1733423132346!5m2!1sen!2sus"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d54673.05871694681!2d73.77337841849369!3d18.548948794942167!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf3520496b5f%3A0xee34e55c54da61d2!2sBotMakers!5e0!3m2!1sen!2sus!4v1733826165124!5m2!1sen!2sus"
                   width="600"
                   height="450"
                   style={{ border: 0 }}

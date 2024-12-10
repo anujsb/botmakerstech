@@ -2,12 +2,13 @@
 
 import Footer from "@/components/Sections/Footer";
 import { Header } from "@/components/Sections/Header";
+import { Header2 } from "@/components/Sections/Header2";
 import React from "react";
 
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen text-gray-900 mt-20">
-      <Header />
+      <Header2 />
       <div className="container mx-auto p-6">
         <h1 className="text-3xl font-bold text-center mb-8">Privacy Policy</h1>
         <div className="space-y-6">

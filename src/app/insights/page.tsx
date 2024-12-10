@@ -17,6 +17,7 @@ import { Calendar, FileText, BookOpen, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { Header } from "@/components/Sections/Header";
 import Footer from "@/components/Sections/Footer";
+import { Header2 } from "@/components/Sections/Header2";
 
 // Define the type for blogs
 type Blog = {
@@ -71,7 +72,7 @@ export default function InsightsPage() {
       excerpt:
         "The rapid advancements in technology have revolutionized how we work, communicate, and live. For Indian youth, especially, the integration of Robotics and Artificial Intelligence (AI). This blog explores why embracing Robotics and AI is essential for India's young generation and how it can empower them for a brighter future.",
       content: (
-        <div>
+        <div className="text-justify">
           <p className="text-gray-700 mb-4">
             The rapid advancements in technology have revolutionized how we
             work, communicate, and live. For Indian youth, especially, the
@@ -240,7 +241,7 @@ export default function InsightsPage() {
       excerpt:
         "In an era where technology shapes nearly every aspect of our lives, fostering interest and skills in robotics, AI, and other emerging technologies has never been more crucial. Botmakers Pvt. Ltd. aims to bridge the gap between complex technological concepts and accessible, interactive learning experiences through its unique offerings of tech-based games and educational workshops.",
       content: (
-        <div>
+        <div className="text-justify">
           <p className="text-gray-700 text-lg mb-6">
             In an era where technology shapes nearly every aspect of our lives,
             fostering interest and skills in robotics, AI, and other emerging
@@ -364,12 +365,12 @@ export default function InsightsPage() {
       excerpt:
         "How Botmakers Pvt. Ltd. partnered with the state government to bring cutting-edge technology education to underserved areas.",
       content: (
-        <div>
+        <div className="text-justify">
           <section>
-            <h2 className="text-2xl font-semibold text-gray-800">
+            <h2 className="text-2xl font-semibold text-gray-800 text-justify mt-4">
               The Need of the Hour for India
             </h2>
-            <ul className="list-inside list-disc space-y-2 mt-4">
+            <ul className="list-inside list-disc space-y-2 mt-4 text-justify">
               <li>
                 <strong>Bridging the Skills Gap:</strong> India faces a
                 significant skills gap in STEM fields. Robotics play zones can
@@ -396,7 +397,7 @@ export default function InsightsPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-gray-800">
+            <h2 className="text-2xl font-semibold text-gray-800 text-justify mt-4">
               Global Success Stories and Lessons for India
             </h2>
             <p className="mt-4 text-lg text-gray-600">
@@ -404,7 +405,7 @@ export default function InsightsPage() {
               like Japan, South Korea, the USA, and China. Here are some lessons
               India can learn from these global examples:
             </p>
-            <ul className="list-inside list-disc space-y-2 mt-4">
+            <ul className="list-inside list-disc space-y-2 mt-4 text-justify">
               <li>
                 <strong>Japan:</strong> Integrating robotics into daily life,
                 Japan offers robotics play zones in museums and public spaces to
@@ -429,17 +430,17 @@ export default function InsightsPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-gray-800">
+            <h2 className="text-2xl font-semibold text-gray-800 text-justify mt-4">
               Botmakers Pvt. Ltd. and Our Mission
             </h2>
-            <p className="mt-4 text-lg text-gray-600">
+            <p className="mt-4 text-lg text-gray-600 text-justify">
               At Botmakers Pvt. Ltd., we are committed to revolutionizing
               education in India by blending learning with fun and innovation.
               Our initiatives are designed to inspire curiosity, foster
               creativity, and equip the youth with the skills needed for
               tomorrow's technological world.
             </p>
-            <ul className="list-inside list-disc space-y-2 mt-4">
+            <ul className="list-inside list-disc space-y-2 mt-4 text-justify">
               <li>
                 <strong>Engaging and Interactive Workshops:</strong> We offer
                 activities like drone racing and robot soccer that make learning
@@ -466,10 +467,10 @@ export default function InsightsPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-gray-800">
+            <h2 className="text-2xl font-semibold text-gray-800 text-justify mt-4">
               The Way Forward
             </h2>
-            <p className="mt-4 text-lg text-gray-600">
+            <p className="mt-4 text-lg text-gray-600 text-justify">
               India’s journey toward becoming a global technology leader
               requires a focus on STEM education. Robotics play zones provide an
               engaging, scalable solution to equip the next generation with the
@@ -479,7 +480,7 @@ export default function InsightsPage() {
             </p>
           </section>
 
-          <footer className="text-center mt-8 text-gray-600">
+          <footer className="mt-8 text-gray-600 text-justify">
             <p>
               For more insights into robotics in education, refer to resources
               from the National Science Foundation and case studies on global
@@ -493,7 +494,7 @@ export default function InsightsPage() {
         "Trained 1000+ teachers",
         "Impacted 50,000+ students",
       ],
-      image: "/favicon.ico?height=400&width=600",
+      image: "/case_study.jpeg",
     },
   ];
 
@@ -501,7 +502,7 @@ export default function InsightsPage() {
     {
       name: "Techfest, IIT Bombay",
       date: "17 to 19 Dec 2024",
-      image: "/tf.jpg",
+      image: "/tf.webp",
       description:
         "Join us at India's largest science and technology festival, featuring cutting-edge robotics demonstrations and competitions.",
     },
@@ -516,7 +517,8 @@ export default function InsightsPage() {
 
   return (
     <div className="bg-[#ffffff] text-[#050315] text-justify">
-      <Header />
+      {/* <Header /> */}
+      <Header2 />
       <motion.header
         className="bg-[#ff6101] text-white py-24 text-center relative overflow-hidden"
         initial={{ opacity: 0 }}
@@ -662,9 +664,9 @@ export default function InsightsPage() {
                 <Image
                   src={event.image}
                   alt={event.name}
-                  width={500}
+                  width={300}
                   height={300}
-                  className="w-full h-56 object-cover"
+                  className="w-full h-56 object-contain p-10"
                 />
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-semibold mb-2">{event.name}</h3>
@@ -710,7 +712,7 @@ export default function InsightsPage() {
         open={selectedBlog !== null}
         onOpenChange={(open) => open || setSelectedBlog(null)}
       >
-        <DialogContent className="max-w-3xl">
+        <DialogContent className="max-w-6xl">
           <DialogHeader>
             <DialogTitle>{selectedBlog?.title || "Blog Details"}</DialogTitle>
             <DialogDescription>
@@ -736,7 +738,7 @@ export default function InsightsPage() {
         open={!!selectedCaseStudy}
         onOpenChange={() => setSelectedCaseStudy(null)}
       >
-        <DialogContent className="max-w-3xl">
+        <DialogContent className="max-w-6xl">
           <DialogHeader>
             <DialogTitle>{selectedCaseStudy?.title}</DialogTitle>
           </DialogHeader>

@@ -10,7 +10,7 @@ import {
   MapPin,
 } from "lucide-react";
 
-export const Footer = () => {
+export const  Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
@@ -36,8 +36,8 @@ export const Footer = () => {
     },
     {
       icon: Youtube,
-      href: "https://github.com/anujsb",
-      label: "GitHub",
+      // href: "",
+      label: "Youtube",
     },
   ];
 
@@ -60,7 +60,7 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gray-50 text-gray-800 text-start">
+    <footer className="bg-orange-50 text-gray-800 text-start pt-10">
       <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand and Social Links */}
