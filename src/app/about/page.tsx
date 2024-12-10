@@ -3,10 +3,11 @@
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Rocket, Users, Shield, Star, Lightbulb, Globe } from "lucide-react";
+import { Rocket, Users, Shield, Star, Lightbulb, Globe, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
 import { Header } from "@/components/Sections/Header";
 import { Footer } from "@/components/Sections/Footer";
+import Link from "next/link";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -68,24 +69,28 @@ export default function AboutPage() {
       role: "CEO",
       bio: "Akshay Joshi, a visionary entrepreneur dedicated to advancing robotics through innovation and education. As the founder of BOTMAKERS, Tiltas Systems, and Technobotix, he has over 12 years of expertise in robotics, UAVs, and technology. Akshay also leads Blanka Botz, a nonprofit robotics club inspiring creativity and collaboration among aspiring minds. His journey is a testament to his passion for shaping the future of robotics.",
       image: "/akshay-joshi.webp",
+      linkedin: "https://www.linkedin.com/in/akshay-joshi-1946a171",
     },
     {
       name: "Mohit Chaudhari",
       role: "CFO",
       bio: "Mohit Chaudhari is a dynamic and accomplished professional with a Bachelor's degree in Mechanical Engineering and over 8 years of expertise in design engineering, robotics, manufacturing, finance, and international trade. His journey in robotics began in 2014, and since then, he has established himself as a force to be reckoned with, winning prestigious national and international championships, including FMB and COB. As a visionary leader, Mohit has held key roles such as Director, CFO, and CEO at Botmakers, Technobotix, and Tiltas Systems, where he has been instrumental in driving innovation, operational efficiency, and strategic growth. A proud member of the Blanka Botz Robotics Club, he continues to inspire and lead the next generation of roboticists, shaping the future of technology and automation.",
       image: "/Mohit.webp",
+      linkedin: "https://www.linkedin.com/in/mohit-chaudhari-7599a414b",
     },
     {
       name: "Rahul Ishi",
       role: "COO",
       bio: "Rahul, a dedicated robotics enthusiast, is passionate about transforming education in robotics, UAVs, embedded systems, and AI. With a focus on practical, hands-on learning, he empowers students from kindergarten to postgraduate levels, bridging the gap between theory and industry needs. Committed to inclusivity, Rahul ensures access to quality education for all, nurturing future tech leaders and innovators. With around 10 years of experience in the Indian robotics community, starting from his undergraduate days, he also led a robotics club for approximately 4 years, fostering innovation and collaboration among aspiring engineers.",
       image: "/Rahul.png",
+      linkedin: "https://www.linkedin.com/in/rahul-ishi/",
     },
     {
       name: "Piyush N Jha",
       role: "CBO",
       bio: "Piyush N Jha, a passionate leader with 15 years of experience in driving business growth, enhancing operations, and mitigating risks. With a proven track record of leading companies to success, Piyush's last role as VP showcased his ability to align teams with company goals and lead by example. A tech and robotics enthusiast who returned from Europe with deep committed to making a positive impact on his motherland, India.",
       image: "/piyush.jpeg",
+      linkedin: "https://www.linkedin.com/in/piyushnjha/?originalSubdomain=in",
     },
   ];
 
@@ -246,12 +251,24 @@ export default function AboutPage() {
                         <h3 className="text-2xl font-semibold mb-1">
                           {leader.name}
                         </h3>
+                        <div className="flex gap-4">
+                        {leader.linkedin && (
+                          <Link
+                            href={leader.linkedin}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-[#0077B5] hover:opacity-80 transition-opacity"
+                          >
+                            <Linkedin className="w-6 h-6" />
+                          </Link>
+                        )}
                         <Badge
                           variant="secondary"
                           className="mb-4 bg-[#fbdbcb] text-[#ff6101]"
                         >
                           {leader.role}
                         </Badge>
+                        </div>
                         <p className="text-sm">{leader.bio}</p>
                       </div>
                     </CardContent>

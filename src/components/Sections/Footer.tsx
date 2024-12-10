@@ -21,7 +21,7 @@ export const Footer = () => {
     },
     {
       icon: Twitter,
-      href: "https://twitter.com/botmakers",
+      href: "https://x.com/anujsbhuyar",
       label: "Twitter",
     },
     {
@@ -36,7 +36,7 @@ export const Footer = () => {
     },
     {
       icon: Youtube,
-      href: "https://github.com/botmakers",
+      href: "https://github.com/anujsb",
       label: "GitHub",
     },
   ];

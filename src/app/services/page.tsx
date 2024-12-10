@@ -167,7 +167,7 @@ export default function ServicesPage() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="flex flex-col h-full">
-                  <p className="text-lg mb-4 flex-grow">
+                  <p className="text-lg mb-4 flgrowex-">
                     {service.description}
                   </p>
 

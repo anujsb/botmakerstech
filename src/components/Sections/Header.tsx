@@ -14,7 +14,7 @@ export function Header() {
       link: "/insights",
     },
     { name: "About Us", link: "/about" },
-    { name: "Contact Us", link: "/contact" },
+    // { name: "Contact Us", link: "/contact" },
   ];
 
   return (
