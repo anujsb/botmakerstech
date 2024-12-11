@@ -61,7 +61,7 @@ const page = () => {
         <Card className="mb-8 text-justify">
           <CardHeader>
             <CardTitle className="text-2xl">
-              Welcome to the RRobo Playzone
+              Welcome to the Robo Playzone
             </CardTitle>
             <CardDescription>
               
