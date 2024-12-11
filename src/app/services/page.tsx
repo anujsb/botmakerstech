@@ -71,7 +71,7 @@ export default function ServicesPage() {
         "Interactive exhibits for educational institutions",
         "Customized tech zones for public spaces and private events",
       ],
-      image: "/mission.jpg",
+      image: "/TechEventPlanning.jpeg",
       benefits: [
         "Unique Event Experiences",
         "Technology Engagement",
@@ -88,7 +88,7 @@ export default function ServicesPage() {
         "Networking opportunities for aspiring technologists",
         "Encouraging collaborative learning and innovation",
       ],
-      image: "/purpose.jpg",
+      image: "/RoboticsCompetitions.jpeg",
       benefits: [
         "Innovation Showcase",
         "Skill Validation",

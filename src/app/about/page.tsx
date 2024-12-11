@@ -84,7 +84,7 @@ export default function AboutPage() {
       name: "Rahul Ishi",
       role: "COO",
       bio: "Rahul, a dedicated robotics enthusiast, is passionate about transforming education in robotics, UAVs, embedded systems, and AI. With a focus on practical, hands-on learning, he empowers students from kindergarten to postgraduate levels, bridging the gap between theory and industry needs. Committed to inclusivity, Rahul ensures access to quality education for all, nurturing future tech leaders and innovators. With around 10 years of experience in the Indian robotics community, starting from his undergraduate days, he also led a robotics club for approximately 4 years, fostering innovation and collaboration among aspiring engineers.",
-      image: "/Rahul.png",
+      image: "/rahulishi.png",
       linkedin: "https://www.linkedin.com/in/rahul-ishi/",
     },
     {
