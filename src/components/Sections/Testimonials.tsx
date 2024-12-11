@@ -79,7 +79,7 @@ const testimonials = [
     name: "RAHUL PATIL",
     title: "Founder & CEO of Sarus Aerospace PVT. LTD",
     href: "https://www.linkedin.com/in/rahulae8/",
-    imageSrc: "/mohit-chaudhari.webp",
+    imageSrc: "/Rahul Patil.jpg",
   },
   {
     quote:
@@ -87,7 +87,7 @@ const testimonials = [
     name: "Jayesh Sonawane",
     title: "Founder Incquet Solutions",
     href: "https://www.linkedin.com/in/jayesh-sonawane-329762a2/",
-    imageSrc: "/mohit-chaudhari.webp",
+    imageSrc: "/Jayesh Sonawane.png",
   },
   {
     quote:
@@ -95,7 +95,7 @@ const testimonials = [
     name: "Himanshu Maloo",
     title: "VP, Supply Chain Planning & Logistics",
     href: "https://www.linkedin.com/in/himanshu-maloo/",
-    imageSrc: "/mohit-chaudhari.webp",
+    imageSrc: "/test1.jpeg",
   },
 ];
 

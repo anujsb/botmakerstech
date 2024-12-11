@@ -77,7 +77,7 @@ export default function AboutPage() {
       name: "Mohit Chaudhari",
       role: "CFO",
       bio: "Mohit Chaudhari is a dynamic and accomplished professional with a Bachelor's degree in Mechanical Engineering and over 8 years of expertise in design engineering, robotics, manufacturing, finance, and international trade. His journey in robotics began in 2014, and since then, he has established himself as a force to be reckoned with, winning prestigious national and international championships, including FMB and COB. As a visionary leader, Mohit has held key roles such as Director, CFO, and CEO at Botmakers, Technobotix, and Tiltas Systems, where he has been instrumental in driving innovation, operational efficiency, and strategic growth. A proud member of the Blanka Botz Robotics Club, he continues to inspire and lead the next generation of roboticists, shaping the future of technology and automation.",
-      image: "/mohit-chaudhari.webp",
+      image: "/mohit-chaudhari copy.webp",
       linkedin: "https://www.linkedin.com/in/mohit-chaudhari-7599a414b",
     },
     {
