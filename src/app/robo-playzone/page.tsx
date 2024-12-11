@@ -39,14 +39,14 @@ const games = [
     content:
       "Learn to fly drones through an exciting obstacle course. Our drone racing game offers hands-on experience with drone technology, allowing players to navigate through various hurdles and challenges in the air.",
     image: "/Quick Flying.png",
-    video: "/fly.mp4", // Replace with actual video URL
+    video: "/fly.mp4.mp4", // Replace with actual video URL
   },
   {
     title: "Goal Masters",
     content:
       "Engage in robotics soccer with our 2v2 or 4v4 setups. Experience the excitement of Rocket League in real life as you control robots to score goals and compete in a high-energy game of soccer.",
     image: "/Goal Masters.jpg",
-    video: "/Goal Masters.mp4", // Replace with actual video URL
+    video: "/Goal Masters.mp4.mp4", // Replace with actual video URL
   },
 ];
 
@@ -147,7 +147,7 @@ const page = () => {
                       <p className=" mb-4">{game.content}</p>
                     </div>
                     <div>
-                      <AspectRatio ratio={16 / 9} className="mb-4">
+                      <AspectRatio ratio={15 / 9} className="mb-4">
                         <iframe
                           src={game.video}
                           title={`${game.title} video`}
