@@ -116,12 +116,16 @@ export const QuickLinks = () => {
               className="group relative overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1 backdrop-blur-sm bg-orange-50 rounded-2xl"
             >
               <CardContent className="p-6">
-                <div className="flex flex-col md:flex-row gap-4 items-center">
+                <div className="flex flex-col md:flex-row gap-4 ">
                   <div className="flex-grow">
                     <div className="mb-4">
-                      <h3 className="text-3xl font-bold">{service.title}</h3>
+                      <h3 className="text-3xl font-bold text-start">
+                        {service.title}
+                      </h3>
                     </div>
-                    <p className="text-gray-600 text-justify mb-4">{service.description}</p>
+                    <p className="text-gray-600 mb-4 text-start ">
+                      {service.description}
+                    </p>
                   </div>
                   <div className="w-full md:w-1/2 flex-shrink-0">
                     <div className="relative w-full aspect-square">

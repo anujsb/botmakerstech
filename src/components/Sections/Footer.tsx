@@ -65,7 +65,7 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand and Social Links */}
-          <div className="space-y-6">
+          <div className="">
             <Link href="/" className="inline-block">
               <Image
                 src="/logo-black.webp"
@@ -75,10 +75,8 @@ export const Footer = () => {
                 className="rounded-lg transition-transform hover:scale-105"
               />
             </Link>
-
-            <p className="text-gray-600 max-w-xs">
-              Innovating technology solutions to transform the future of
-              robotics and education.
+            <p className="text-gray-600 ">
+              Shaping tomorrow's Innovators
             </p>
 
             <div className="flex space-x-4">
