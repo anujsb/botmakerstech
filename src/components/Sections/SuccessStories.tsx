@@ -10,8 +10,7 @@ export function SuccessStories() {
         <h2 className="text-3xl text-gray-900 sm:text-4xl text-center mb-4 font-bold">
           Success Stories
         </h2>
-        <p className="text-center text-lg mb-8 max-w-2xl mx-auto text-gray-600 ">
-        </p>
+        <p className="text-center text-lg mb-8 max-w-2xl mx-auto text-gray-600 "></p>
       </div>
       <InfiniteMovingCardsImage
         items={testimonials}
@@ -25,32 +24,52 @@ export function SuccessStories() {
 const testimonials = [
   {
     image: "/stories1.jpg", // Replace with actual image URLs
-    title: "Literary Classic",
-    description:
-      "A sweeping narrative of two cities during the French Revolution, exploring themes of sacrifice, redemption, and social injustice.",
+    title: "Expand",
+    description: "Sharing Knowledge.",
   },
   {
     image: "/stories2.jpg",
-    title: "Shakespearean Tragedy",
-    description:
-      "A profound exploration of existential crisis, mental anguish, and the human condition through the lens of a Danish prince's inner turmoil.",
+    title: "Workshops",
+    description: "Learn and grow",
   },
   {
     image: "/stories3.jpg",
-    title: "Poetic Reflection",
-    description:
-      "A mesmerizing poem that delves into the ephemeral nature of reality, blurring the lines between perception and illusion.",
+    title: "Expos",
+    description: "Explore New Tech",
   },
   {
     image: "/stories4.jpg",
-    title: "Romantic Social Commentary",
-    description:
-      "A witty and insightful novel that critiques the marriage customs and social expectations of early 19th-century English society.",
+    title: "Moving Together",
+    description: "Team Collabration.",
   },
   {
-    image: "/stories2.jpg",
-    title: "Epic of the Sea",
-    description:
-      "A groundbreaking novel that follows the obsessive quest of Captain Ahab, revealing the depths of human ambition and the raw power of nature.",
+    image: "/stories5.jpeg",
+    title: "MoU - xmind China",
+    description: "Learn and grow",
+  },
+  {
+    image: "/stories5.jpeg",
+    title: "MoU - xmind China",
+    description: "Learn and grow",
+  },
+  {
+    image: "/stories6.jpeg",
+    title: "Taiwan robotic community",
+    description: "Learn and grow",
+  },
+  {
+    image: "/stories7.jpeg",
+    title: "Xmind China",
+    description: "Learn and grow",
+  },
+  {
+    image: "/stories8.jpeg",
+    title: "PromBot Russia",
+    description: "Learn and grow",
+  },
+  {
+    image: "/stories9.jpeg",
+    title: "Russian Minister",
+    description: "Learn and grow",
   },
 ];
