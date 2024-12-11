@@ -117,10 +117,10 @@ export const InfiniteMovingCardsImage = ({
               }}
             />
             <div className="absolute bottom-0 left-0 right-0 z-10 p-6 bg-background/50 backdrop-blur-sm">
-              <h3 className="text-xl text-white text-center mb-2 font-semibold">
+              <h3 className="text-xl text-black text-center mb-2 font-semibold">
                 {item.title}
               </h3>
-              <p className="text-center text-white/90">{item.description}</p>
+              <p className="text-center text-black/90">{item.description}</p>
             </div>
           </li>
         ))}

@@ -48,28 +48,23 @@ const testimonials = [
     description: "Learn and grow",
   },
   {
-    image: "/stories5.jpeg",
-    title: "MoU - xmind China",
-    description: "Learn and grow",
-  },
-  {
     image: "/stories6.jpeg",
     title: "Taiwan robotic community",
-    description: "Learn and grow",
+    description: "",
   },
   {
     image: "/stories7.jpeg",
     title: "Xmind China",
-    description: "Learn and grow",
+    description: "",
   },
   {
     image: "/stories8.jpeg",
     title: "PromBot Russia",
-    description: "Learn and grow",
+    description: "",
   },
   {
     image: "/stories9.jpeg",
     title: "Russian Minister",
-    description: "Learn and grow",
+    description: "",
   },
 ];
