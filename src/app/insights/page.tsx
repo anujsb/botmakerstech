@@ -676,10 +676,10 @@ export default function InsightsPage() {
                   <p className="text-muted-foreground mb-4">
                     {event.description}
                   </p>
-                  <Button variant="outline" className="group">
+                  {/* <Button variant="outline" className="group">
                     Learn More
                     <ChevronRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                  </Button>
+                  </Button> */}
                 </CardContent>
               </Card>
             </motion.div>
