@@ -79,7 +79,7 @@ export const Footer = () => {
               Shaping tomorrow's Innovators
             </p>
 
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 mt-4">
               {socialLinks.map(({ icon: Icon, href, label }) => (
                 <a
                   key={label}
