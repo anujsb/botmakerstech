@@ -191,7 +191,7 @@ export default function ServicesPage() {
                       <h4 className="font-semibold mb-2 text-[#ff6101]">
                         Key Details
                       </h4>
-                      <ul className="list-disc list-inside text-sm space-y-1">
+                      <ul className="list-disc list-inside text-sm space-y-1 text-justify">
                         {service.details.map((detail, idx) => (
                           <li key={idx}>{detail}</li>
                         ))}

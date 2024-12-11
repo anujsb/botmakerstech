@@ -1,23 +1,23 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import Link from "next/link"
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu } from 'lucide-react'
-import Image from "next/image"
+import * as React from "react";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Menu } from "lucide-react";
+import Image from "next/image";
 
 export function Header2() {
-  const [isScrolled, setIsScrolled] = React.useState(false)
+  const [isScrolled, setIsScrolled] = React.useState(false);
 
   React.useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+      setIsScrolled(window.scrollY > 0);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <header
@@ -30,12 +30,12 @@ export function Header2() {
         <Link href="/" className="flex items-center space-x-2">
           {/* <span className="text-xl font-bold">BOTMAKERS</span> */}
           <Image
-              src="/logo-black.webp"
-              width={100}
-              height={70}
-              alt="logo"
-              className="rounded-lg"
-            />
+            src="/logo-black.webp"
+            width={100}
+            height={70}
+            alt="logo"
+            className="rounded-lg"
+          />
         </Link>
         <nav className="hidden space-x-6 md:flex">
           <NavLinks />
@@ -52,18 +52,28 @@ export function Header2() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="pt-16">
-              <nav className="flex flex-col space-y-4">
-                <NavLinks />
-                <Button className="bg-[#F26D3D] text-white hover:bg-[#E25D2D]">
-                  Contact Us
-                </Button>
+              <nav className="flex flex-col space-y-4 justify-between h-full">
+                <div className="flex flex-col space-y-4">
+                  <NavLinks />
+                  <Button className="bg-[#F26D3D] text-white hover:bg-[#E25D2D]">
+                    Contact Us
+                  </Button>
+                </div>
+                <div className="flex justify-end items-end">
+                  <Image
+                    src="/favicon.ico"
+                    alt="logo"
+                    width="100"
+                    height="100"
+                  />
+                </div>
               </nav>
             </SheetContent>
           </Sheet>
         </div>
       </div>
     </header>
-  )
+  );
 }
 
 function NavLinks() {
@@ -101,11 +111,10 @@ function NavLinks() {
       </Link>
       <Link
         href="/about"
-        className="transition-colors hover:text-primary"
+        className="font-medium transition-colors hover:text-primary"
       >
         About Us
       </Link>
     </>
-  )
+  );
 }
-
