@@ -27,7 +27,7 @@ export const Hero = () => {
           innovation, and collaboration.
         </p>
         <div className="flex mt-6 gap-4 items-center justify-center">
-          <Link href="/about">
+          <Link href="/robo-playzone">
           <Button variant="default" className="text-white font-semibold">
             Know More
           </Button>

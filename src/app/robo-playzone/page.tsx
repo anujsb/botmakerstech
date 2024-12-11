@@ -64,11 +64,14 @@ const page = () => {
               Welcome to the Robotics Play Zone
             </CardTitle>
             <CardDescription>
-              At Botmakers Pvt. Ltd., we offer interactive, educational, and
-              entertaining experiences for all ages.
+              
             </CardDescription>
           </CardHeader>
           <CardContent>
+            <p className="mb-4">
+            At Botmakers Pvt. Ltd., we offer interactive, educational, and
+            entertaining experiences for all ages.
+            </p>
             <p className="mb-4">
               Our Robotics Play Zone is designed to captivate and engage
               attendees of all ages, from grandchildren to grandparents, with
@@ -200,8 +203,22 @@ const page = () => {
                   </li>
                 </ul>
               </div>
-              <div className="grid grid-flow-row row-span-2 gap-4">
-                <div className="grid grid-flow-col col-span-2 gap-4">
+              <div className="grid grid-flow-col col-span-2 gap-4">
+                <video
+                  width="310"
+                  height="1000"
+                  autoPlay
+                  loop
+                  muted
+                  className="border border-accent rounded-xl shadow-lg shadow-accent "
+                >
+                  <source
+                    src="https://botmakerstech.in/wp-content/uploads/2024/10/unitree.webm"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+                {/* <div className="grid grid-flow-col col-span-2 gap-4">
                   <div>
                     <Image
                       src="/demo1.png"
@@ -222,8 +239,8 @@ const page = () => {
                     />
                     <p className="text-center mt-2">Xgo Mini</p>
                   </div>
-                </div>
-                <div className="grid grid-flow-col col-span-2 gap-4">
+                </div> */}
+                <div className="grid grid-flow-row row-span-2 gap-4 max-w-[300px]">
                   <div>
                     <Image
                       src="/demo3.png"
@@ -250,7 +267,7 @@ const page = () => {
             {/* <Button className="w-full md:w-auto">Schedule a Demo</Button> */}
           </CardContent>
         </Card>
-        <div className="grid md:grid-flow-col sm:grid-flow-row items-center justify-center mt-10 gap-6">
+        {/* <div className="grid md:grid-flow-col sm:grid-flow-row items-center justify-center mt-10 gap-6">
           <video
             width="300"
             height="1000"
@@ -293,7 +310,7 @@ const page = () => {
             />
             Your browser does not support the video tag.
           </video>
-        </div>
+        </div> */}
       </div>
       <Footer />
     </div>

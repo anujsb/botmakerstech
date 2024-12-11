@@ -87,6 +87,25 @@ export const InfiniteMovingCardsImage = ({
         )}
       >
         {items.map((item, idx) => (
+          // <li
+          //   className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 overflow-hidden md:w-[450px] h-[400px]"
+          //   key={item.title}
+          // >
+          //   <div
+          //     className="absolute inset-0 z-0 bg-cover bg-center h-full"
+          //     style={{
+          //       backgroundImage: `url(${item.image})`,
+          //       // filter: 'brightness()'
+          //     }}
+          //   />
+          //   <div className="z-10 p-6 bg-background/50 backdrop-blur-sm">
+          //     <h3 className="text-xl text-gray-900 text-center mb-4 font-semibold">
+          //       {item.title}
+          //     </h3>
+          //     <p className="text-center text-gray-800">{item.description}</p>
+          //   </div>
+          // </li>
+
           <li
             className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 overflow-hidden md:w-[450px] h-[400px]"
             key={item.title}
@@ -95,14 +114,13 @@ export const InfiniteMovingCardsImage = ({
               className="absolute inset-0 z-0 bg-cover bg-center h-full"
               style={{
                 backgroundImage: `url(${item.image})`,
-                // filter: 'brightness()'
               }}
             />
-            <div className="relative z-10 p-6 bg-background/50 backdrop-blur-sm flex flex-col justify-end">
-              <h3 className="text-xl text-gray-900 text-center mb-4 font-semibold">
+            <div className="absolute bottom-0 left-0 right-0 z-10 p-6 bg-background/50 backdrop-blur-sm">
+              <h3 className="text-xl text-white text-center mb-2 font-semibold">
                 {item.title}
               </h3>
-              <p className="text-center text-gray-800">{item.description}</p>
+              <p className="text-center text-white/90">{item.description}</p>
             </div>
           </li>
         ))}
