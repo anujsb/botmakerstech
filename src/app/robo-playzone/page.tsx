@@ -169,7 +169,7 @@ const page = () => {
             <CardTitle className="text-2xl">Demonstration Robots</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-flow-col gap-4">
+            <div className="grid sm:grid-flow-row  md:grid-flow-col gap-4">
               <div>
                 <p>
                   In addition to our interactive games, the Robotics Experience
