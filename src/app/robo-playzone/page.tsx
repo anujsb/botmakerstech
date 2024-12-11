@@ -109,7 +109,7 @@ const page = () => {
           </CardContent>
         </Card>
 
-        <h2 className="text-3xl font-bold mb-4 text-center">Our Games</h2>
+        {/* <h2 className="text-3xl font-bold mb-4 text-center">Our Games</h2> */}
         <Tabs
           defaultValue={games[0].title.toLowerCase().replace(/\s+/g, "-")}
           className="mb-8"
