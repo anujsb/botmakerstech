@@ -2,13 +2,14 @@
 
 import Footer from "@/components/Sections/Footer";
 import { Header } from "@/components/Sections/Header";
+import { Header2 } from "@/components/Sections/Header2";
 import React from "react";
 
 const TermsAndConditions = () => {
   return (
-    <div className="min-h-screen text-gray-900 mt-20">
-      <Header />
-      <div className="container mx-auto p-6">
+    <div className="min-h-screen text-gray-900 ">
+      <Header2 />
+      <div className="container mx-auto p-6 mt-20">
         <h1 className="text-3xl font-bold text-center mb-8">
           Terms & Conditions
         </h1>
