@@ -1,3 +1,4 @@
+"use client"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   Card,
@@ -11,6 +12,8 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Image from "next/image";
 import { Header2 } from "@/components/Sections/Header2";
 import Footer from "@/components/Sections/Footer";
+import { motion } from "framer-motion";
+
 
 const games = [
   {
@@ -54,10 +57,43 @@ const page = () => {
   return (
     <div>
       <Header2 />
-      <div className="container mx-auto px-4 py-8 text-justify">
-        <h1 className="text-4xl font-bold mb-6  text-center">
+      <motion.header
+        className="bg-[#ff6101] text-white py-20 text-center relative overflow-hidden"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <motion.div
+          className="absolute inset-0 z-0"
+          initial={{ scale: 1.2, opacity: 0 }}
+          animate={{ scale: 1, opacity: 0.2 }}
+          transition={{ duration: 1.5 }}
+        >
+          {/* <Image
+            src="/logo-black.webp"
+            alt="Header background"
+            layout="fill"
+            objectFit="cover"
+          /> */}
+        </motion.div>
+        <motion.h1
+          className="text-5xl font-bold mb-4 relative z-10 mt-10"
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.5, duration: 0.8 }}
+        >
         Robo Playzone
-        </h1>
+        </motion.h1>
+        <motion.p
+          className="text-2xl relative z-10"
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.7, duration: 0.8 }}
+        >
+          Transforming Ideas into Technological Realities
+        </motion.p>
+      </motion.header>
+      <div className="container mx-auto px-4 py-8 text-justify">
         <Card className="mb-8 text-justify">
           <CardHeader>
             <CardTitle className="text-2xl">

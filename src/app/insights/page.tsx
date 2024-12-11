@@ -520,7 +520,7 @@ export default function InsightsPage() {
       {/* <Header /> */}
       <Header2 />
       <motion.header
-        className="bg-[#ff6101] text-white py-24 text-center relative overflow-hidden"
+        className="bg-primary text-white py-24 text-center relative overflow-hidden"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -531,12 +531,12 @@ export default function InsightsPage() {
           animate={{ scale: 1, opacity: 0.2 }}
           transition={{ duration: 1.5 }}
         >
-          <Image
+          {/* <Image
             src="/logo-black.webp"
             alt="Insights header background"
             layout="fill"
             objectFit="cover"
-          />
+          /> */}
         </motion.div>
         <motion.h1
           className="text-6xl font-bold mb-4 relative z-10"

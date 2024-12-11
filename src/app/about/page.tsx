@@ -3,7 +3,16 @@
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Rocket, Users, Shield, Star, Lightbulb, Globe, Linkedin, ArrowRight } from "lucide-react";
+import {
+  Rocket,
+  Users,
+  Shield,
+  Star,
+  Lightbulb,
+  Globe,
+  Linkedin,
+  ArrowRight,
+} from "lucide-react";
 import { motion } from "framer-motion";
 import { Header } from "@/components/Sections/Header";
 import { Footer } from "@/components/Sections/Footer";
@@ -76,14 +85,14 @@ export default function AboutPage() {
     {
       name: "Mohit Chaudhari",
       role: "CFO",
-      bio: "Mohit Chaudhari is a dynamic and accomplished professional with a Bachelor's degree in Mechanical Engineering and over 8 years of expertise in design engineering, robotics, manufacturing, finance, and international trade. His journey in robotics began in 2014, and since then, he has established himself as a force to be reckoned with, winning prestigious national and international championships, including FMB and COB. As a visionary leader, Mohit has held key roles such as Director, CFO, and CEO at Botmakers, Technobotix, and Tiltas Systems, where he has been instrumental in driving innovation, operational efficiency, and strategic growth. A proud member of the Blanka Botz Robotics Club, he continues to inspire and lead the next generation of roboticists, shaping the future of technology and automation.",
+      bio: "Mohit Chaudhari is a dynamic professional with a Bachelor's in Mechanical Engineering and 8+ years of expertise in design engineering, robotics, manufacturing, finance, and international trade. Since starting his robotics journey in 2014, he has excelled, winning national and international championships like FMB and COB. As Director, CFO, and CEO at Botmakers, Technobotix, and Tiltas Systems, he drives innovation and strategic growth. A proud Blanka Botz member, he inspires future roboticists.",
       image: "/mohit-chaudhari copy.webp",
       linkedin: "https://www.linkedin.com/in/mohit-chaudhari-7599a414b",
     },
     {
       name: "Rahul Ishi",
       role: "COO",
-      bio: "Rahul, a dedicated robotics enthusiast, is passionate about transforming education in robotics, UAVs, embedded systems, and AI. With a focus on practical, hands-on learning, he empowers students from kindergarten to postgraduate levels, bridging the gap between theory and industry needs. Committed to inclusivity, Rahul ensures access to quality education for all, nurturing future tech leaders and innovators. With around 10 years of experience in the Indian robotics community, starting from his undergraduate days, he also led a robotics club for approximately 4 years, fostering innovation and collaboration among aspiring engineers.",
+      bio: "Rahul, a robotics enthusiast, is passionate about advancing education in robotics, UAVs, embedded systems, and AI through hands-on learning. He empowers students from kindergarten to postgraduates by bridging theory and industry needs. Committed to inclusivity, he ensures access to quality tech education, nurturing future innovators. With 10 years in India’s robotics community, starting in college, he led a robotics club for 4 years, fostering collaboration and inspiring young engineers.",
       image: "/rahulishi.png",
       linkedin: "https://www.linkedin.com/in/rahul-ishi/",
     },
@@ -100,7 +109,7 @@ export default function AboutPage() {
     <div className="bg-[#ffffff] text-[#050315] text-justify">
       <Header2 />
       <motion.header
-        className="bg-[#ff6101] text-white py-20 text-center relative overflow-hidden"
+        className="bg-primary text-white py-20 text-center relative overflow-hidden"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -111,12 +120,12 @@ export default function AboutPage() {
           animate={{ scale: 1, opacity: 0.2 }}
           transition={{ duration: 1.5 }}
         >
-          <Image
+          {/* <Image
             src="/logo-black.webp?height=600&width=1600"
             alt="Header background"
             layout="fill"
             objectFit="cover"
-          />
+          /> */}
         </motion.div>
         <motion.h1
           className="text-5xl font-bold mb-4 relative z-10 mt-10"
@@ -185,13 +194,13 @@ export default function AboutPage() {
               </motion.div>
               <p className="text-lg leading-relaxed md:w-1/2">
                 At Botmakers Pvt. Ltd., we spark a passion for technology by
-                blending learning with innovation. Our Robo Playzone offer
-                fun, hands-on experiences with robotics and drones, while
-                InnoTech Academy integrates emerging tech into education,
-                reaching learners from KG to PG across urban and rural areas.
-                Committed to inclusivity, we empower every student with the
-                tools to shape a tech-driven future and thrive in a world where
-                innovation knows no bounds.
+                blending learning with innovation. Our Robo Playzone offer fun,
+                hands-on experiences with robotics and drones, while InnoTech
+                Academy integrates emerging tech into education, reaching
+                learners from KG to PG across urban and rural areas. Committed
+                to inclusivity, we empower every student with the tools to shape
+                a tech-driven future and thrive in a world where innovation
+                knows no bounds.
               </p>
             </CardContent>
           </Card>
@@ -237,15 +246,17 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {leaders.map((leader, index) => (
               <motion.div key={index} variants={fadeIn}>
-                <Card className="bg-white border-none shadow-lg overflow-hidden h-full">
+                <Card className="bg-white border-none shadow-lg overflow-hidden h-full pb-4">
                   <div className="flex flex-col md:flex-row h-full">
                     <div className="md:w-1/3 relative">
                       <Image
                         src={leader.image}
                         alt={leader.name}
+                        // width={300}
+                        // height={700}
                         layout="fill"
                         objectFit="cover"
-                        className="absolute inset-0 rounded-xl"
+                        className="absolute inset-0 rounded-xl border m-2"
                       />
                     </div>
                     <CardContent className="md:w-2/3 p-6 flex flex-col justify-between">
@@ -254,22 +265,22 @@ export default function AboutPage() {
                           {leader.name}
                         </h3>
                         <div className="flex gap-4">
-                        {leader.linkedin && (
-                          <Link
-                            href={leader.linkedin}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-[#0077B5] hover:opacity-80 transition-opacity"
+                          {leader.linkedin && (
+                            <Link
+                              href={leader.linkedin}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-[#0077B5] hover:opacity-80 transition-opacity"
+                            >
+                              <Linkedin className="w-6 h-6" />
+                            </Link>
+                          )}
+                          <Badge
+                            variant="secondary"
+                            className="mb-4 bg-[#fbdbcb] text-[#ff6101]"
                           >
-                            <Linkedin className="w-6 h-6" />
-                          </Link>
-                        )}
-                        <Badge
-                          variant="secondary"
-                          className="mb-4 bg-[#fbdbcb] text-[#ff6101]"
-                        >
-                          {leader.role}
-                        </Badge>
+                            {leader.role}
+                          </Badge>
                         </div>
                         <p className="text-sm">{leader.bio}</p>
                       </div>

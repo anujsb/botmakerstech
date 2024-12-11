@@ -1,7 +1,14 @@
+"use client";
 import Footer from "@/components/Sections/Footer";
 import { Header2 } from "@/components/Sections/Header2";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Workshop } from "@/components/workshop";
+import { motion } from "framer-motion";
+
+interface WorkshopFeature {
+  title: string;
+  description: string;
+}
 
 const gradeLevels = [
   {
@@ -83,12 +90,61 @@ const page = () => {
       imageSrc: "/inno5.png",
     },
   ];
+  const features: WorkshopFeature[] = [
+    {
+      title: "Engaging and Interactive",
+      description:
+        "Each workshop is designed to be both entertaining and informative, making learning fun and effective.",
+    },
+    {
+      title: "Hands-On Experience",
+      description:
+        "Students get to work with real equipment and materials, fostering a deeper understanding of the concepts.",
+    },
+    {
+      title: "Skills Development",
+      description:
+        "Our workshops enhance practical skills, creativity, and problem-solving abilities.",
+    },
+    {
+      title: "Innovative Learning",
+      description:
+        "We use the latest technology and methods to provide cutting-edge education.",
+    },
+  ];
 
   return (
     <div className="text-justify">
       <Header2 />
+      <motion.header
+        className="bg-[#ff6101] text-white py-20 text-center relative overflow-hidden"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <motion.div
+          className="absolute inset-0 z-0"
+          initial={{ scale: 1.2, opacity: 0 }}
+          animate={{ scale: 1, opacity: 0.2 }}
+          transition={{ duration: 1.5 }}
+        >
+          {/* <Image
+            src="/logo-black.webp"
+            alt="Header background"
+            layout="fill"
+            objectFit="cover"
+          /> */}
+        </motion.div>
+        <motion.h1
+          className="text-5xl font-bold mb-4 relative z-10 mt-10"
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.5, duration: 0.8 }}
+        >
+          Workshops{" "}
+        </motion.h1>
+      </motion.header>
       <div className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold text-center mb-8">Workshops</h1>
         <p className="text-center mb-12 max-w-2xl mx-auto">
           At Botmakers Pvt. Ltd., our workshops are designed to inspire,
           educate, and entertain. Whether you're a student in school or college,
@@ -104,38 +160,38 @@ const page = () => {
           <h2 className="text-3xl font-bold text-center mb-6">
             Why Choose Us?
           </h2>
-          <div className="max-w-3xl mx-auto">
-            <ul className="list-disc pl-5 space-y-2">
-              <li>
-                <strong>Engaging and Interactive:</strong> Each workshop is
-                designed to be both entertaining and informative, making
-                learning fun and effective.
-              </li>
-              <li>
-                <strong>Hands-On Experience:</strong> Students get to work with
-                real equipment and materials, fostering a deeper understanding
-                of the concepts.
-              </li>
-              <li>
-                <strong>Skills Development:</strong> Our workshops enhance
-                practical skills, creativity, and problem-solving abilities.
-              </li>
-              <li>
-                <strong>Innovative Learning:</strong> We use the latest
-                technology and methods to provide cutting-edge education.
-              </li>
-            </ul>
-            <p className="mt-4">
-              Our workshops are ideal for schools and colleges looking to
-              enhance their STEM curriculum. They offer students the opportunity
-              to explore new technologies, develop valuable skills, and gain
-              practical experience that will benefit them in their academic and
-              professional futures.
-            </p>
-            <p className="mt-4 font-semibold text-center">
-              Join us and experience how learning can be exciting, interactive,
-              and innovative!
-            </p>
+          <div className="max-w-6xl mx-auto px-4 py-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              {features.map((feature, index) => (
+                <Card key={index} className="bg-accent">
+                  <CardHeader>
+                    <CardTitle className="text-lg font-semibold">
+                      {feature.title}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground">
+                      {feature.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+            <Card>
+              <CardContent className="prose dark:prose-invert max-w-none">
+                <p className="mt-4">
+                  Our workshops are ideal for schools and colleges looking to
+                  enhance their STEM curriculum. They offer students the
+                  opportunity to explore new technologies, develop valuable
+                  skills, and gain practical experience that will benefit them
+                  in their academic and professional futures.
+                </p>
+                <p className="mt-4 font-semibold text-center">
+                  Join us and experience how learning can be exciting,
+                  interactive, and innovative!
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>

@@ -127,12 +127,12 @@ export default function ServicesPage() {
           animate={{ scale: 1, opacity: 0.2 }}
           transition={{ duration: 1.5 }}
         >
-          <Image
+          {/* <Image
             src="/logo-black.webp"
             alt="Header background"
             layout="fill"
             objectFit="cover"
-          />
+          /> */}
         </motion.div>
         <motion.h1
           className="text-5xl font-bold mb-4 relative z-10 mt-10"
