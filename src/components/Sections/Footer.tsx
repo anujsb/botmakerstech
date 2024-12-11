@@ -37,7 +37,7 @@ export const Footer = () => {
     },
     {
       icon: Youtube,
-      // href: "",
+      href: "https://www.youtube.com/@Botmakers-hy4zj",
       label: "Youtube",
     },
   ];

@@ -79,7 +79,7 @@ export default function AboutPage() {
       name: "Akshay Joshi",
       role: "CEO",
       bio: "Akshay Joshi, a visionary entrepreneur dedicated to advancing robotics through innovation and education. As the founder of BOTMAKERS, Tiltas Systems, and Technobotix, he has over 12 years of expertise in robotics, UAVs, and technology. Akshay also leads Blanka Botz, a nonprofit robotics club inspiring creativity and collaboration among aspiring minds. His journey is a testament to his passion for shaping the future of robotics.",
-      image: "/Akshay.png",
+      image: "/Akshay Joshi.jpg",
       linkedin: "https://www.linkedin.com/in/akshay-joshi-1946a171",
     },
     {
