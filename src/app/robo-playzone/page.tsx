@@ -10,42 +10,43 @@ import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Image from "next/image";
 import { Header2 } from "@/components/Sections/Header2";
+import Footer from "@/components/Sections/Footer";
 
 const games = [
   {
-    title: "Mountain Rush",
+    title: "Monster Racing ",
     content:
       "Experience the thrill of mountain driving with our miniature 4×4 cars. Navigate through challenging obstacles and rugged terrain, simulating the excitement of off-road adventures. This game provides a realistic driving experience that's both fun and exhilarating.",
-    image: "/case_study.jpeg",
-    video: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with actual video URL
+    image: "/Monster Racing.jpg",
+    video: "/Monuntain Race.mp4", // Replace with actual video URL
   },
   {
-    title: "F1 Racing",
+    title: "Rapid Racing",
     content:
       "Feel the adrenaline with our miniature racing cars, designed for high-speed excitement. Compete on a dynamic track and experience the thrill of F1 racing in a compact, controlled environment. It's an exciting way to engage in competitive racing fun.",
-    image: "/case_study.jpeg",
-    video: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with actual video URL
+    image: "/Rapid Racing.jpg",
+    video: "/Rapid Racing.mp4", // Replace with actual video URL
   },
   {
-    title: "RoboWar",
+    title: "Robo Fight",
     content:
       "Step into the arena with our mini RoboWAR setup. This game replicates the excitement of robot battles in a safe, controlled manner. Participants can enjoy the thrill of robot combat without any harm, making it a unique and engaging experience.",
-    image: "/case_study.jpeg",
-    video: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with actual video URL
+    image: "/Robo Fight.png",
+    video: "/Robo Fight.mp4", // Replace with actual video URL
   },
   {
-    title: "Drone Racing",
+    title: "Quick Flying ",
     content:
       "Learn to fly drones through an exciting obstacle course. Our drone racing game offers hands-on experience with drone technology, allowing players to navigate through various hurdles and challenges in the air.",
-    image: "/case_study.jpeg",
-    video: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with actual video URL
+    image: "/Quick Flying.png",
+    video: "/Quick Flying.png", // Replace with actual video URL
   },
   {
-    title: "RoboSoccer",
+    title: "Goal Masters",
     content:
       "Engage in robotics soccer with our 2v2 or 4v4 setups. Experience the excitement of Rocket League in real life as you control robots to score goals and compete in a high-energy game of soccer.",
-    image: "/case_study.jpeg",
-    video: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with actual video URL
+    image: "/Goal Masters.jpg",
+    video: "/Quick Flying.png", // Replace with actual video URL
   },
 ];
 
@@ -140,9 +141,7 @@ const page = () => {
                           className="rounded-lg object-cover"
                         />
                       </AspectRatio>
-                      <p className="text-sm text-muted-foreground mb-4">
-                        {game.content}
-                      </p>
+                      <p className=" mb-4">{game.content}</p>
                     </div>
                     <div>
                       <AspectRatio ratio={16 / 9} className="mb-4">
@@ -251,10 +250,52 @@ const page = () => {
             {/* <Button className="w-full md:w-auto">Schedule a Demo</Button> */}
           </CardContent>
         </Card>
-        <div>
-            
+        <div className="grid md:grid-flow-col sm:grid-flow-row items-center justify-center mt-10 gap-6">
+          <video
+            width="300"
+            height="1000"
+            autoPlay
+            loop
+            muted
+            className="border border-accent rounded-xl shadow-lg shadow-accent h-[200px]"
+          >
+            <source
+              src="https://botmakerstech.in/wp-content/uploads/2024/10/unitree.webm"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <video
+            width="300"
+            height="1000"
+            autoPlay
+            loop
+            muted
+            className="border border-accent rounded-xl shadow-lg shadow-accent"
+          >
+            <source
+              src="https://botmakerstech.in/wp-content/uploads/2024/10/robowar.webm"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <video
+            width="300"
+            height="1000"
+            autoPlay
+            loop
+            muted
+            className="border border-accent rounded-xl shadow-lg shadow-accent"
+          >
+            <source
+              src="https://botmakerstech.in/wp-content/uploads/2024/10/mountain-rush.webm"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

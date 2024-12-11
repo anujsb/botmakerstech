@@ -1,5 +1,7 @@
+import Footer from "@/components/Sections/Footer";
 import { Header2 } from "@/components/Sections/Header2";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Workshop } from "@/components/workshop";
 
 const gradeLevels = [
   {
@@ -43,12 +45,103 @@ const benefits = [
 ];
 
 const page = () => {
+  const workshops = [
+    {
+      title: "Drone Workshop",
+      description:
+        "Dive into the exciting world of drones! Our Drone Workshop covers the fundamentals of drone technology, including how drones work, their applications, and hands-on flying experience.",
+      imageSrc: "/inno1.jpg",
+    },
+    {
+      title: "Robotics Workshop",
+      description:
+        "Explore the fascinating realm of robotics! Learn about robot design, programming, and control systems through hands-on projects and experiments.",
+      imageSrc: "/workshop.jpg",
+    },
+    {
+      title: "3D Printing Workshop",
+      description:
+        "Discover the world of additive manufacturing! Learn about 3D printing technologies, design principles, and create your own 3D printed objects.",
+      imageSrc: "/inno2.png",
+    },
+    {
+      title: "Electronics Workshop",
+      description:
+        "Uncover the mysteries of electronic circuits! Learn about components, circuit design, and build your own electronic projects.",
+      imageSrc: "/inno3.png",
+    },
+    {
+      title: "IOT Workshop",
+      description:
+        "Step into the future with the Internet of Things! Learn how to connect devices, collect data, and create smart systems.",
+      imageSrc: "/inno4.jpg",
+    },
+    {
+      title: "Arduino Workshop",
+      description:
+        "Get hands-on with Arduino! Learn programming, electronics, and create interactive projects using this versatile microcontroller platform.",
+      imageSrc: "/inno5.png",
+    },
+  ];
+
   return (
-    <div>
+    <div className="text-justify">
       <Header2 />
+      <div className="container mx-auto px-4 py-8">
+        <h1 className="text-4xl font-bold text-center mb-8">Workshops</h1>
+        <p className="text-center mb-12 max-w-2xl mx-auto">
+          At Botmakers Pvt. Ltd., our workshops are designed to inspire,
+          educate, and entertain. Whether you're a student in school or college,
+          our workshops provide an engaging and hands-on learning experience
+          that blends fun with practical knowledge.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {workshops.map((workshop, index) => (
+            <Workshop key={index} {...workshop} />
+          ))}
+        </div>
+        <div className="mt-16">
+          <h2 className="text-3xl font-bold text-center mb-6">
+            Why Choose Us?
+          </h2>
+          <div className="max-w-3xl mx-auto">
+            <ul className="list-disc pl-5 space-y-2">
+              <li>
+                <strong>Engaging and Interactive:</strong> Each workshop is
+                designed to be both entertaining and informative, making
+                learning fun and effective.
+              </li>
+              <li>
+                <strong>Hands-On Experience:</strong> Students get to work with
+                real equipment and materials, fostering a deeper understanding
+                of the concepts.
+              </li>
+              <li>
+                <strong>Skills Development:</strong> Our workshops enhance
+                practical skills, creativity, and problem-solving abilities.
+              </li>
+              <li>
+                <strong>Innovative Learning:</strong> We use the latest
+                technology and methods to provide cutting-edge education.
+              </li>
+            </ul>
+            <p className="mt-4">
+              Our workshops are ideal for schools and colleges looking to
+              enhance their STEM curriculum. They offer students the opportunity
+              to explore new technologies, develop valuable skills, and gain
+              practical experience that will benefit them in their academic and
+              professional futures.
+            </p>
+            <p className="mt-4 font-semibold text-center">
+              Join us and experience how learning can be exciting, interactive,
+              and innovative!
+            </p>
+          </div>
+        </div>
+      </div>
       <div className="min-h-screen bg-background mt-10">
         <div className="container mx-auto px-4 py-12">
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-3xl font-bold mb-6 text-center">
             Transforming Education with RoboSTEAM Innovation Labs
           </h2>
           <p className="text-lg text-gray-700 mb-12">
@@ -134,7 +227,7 @@ const page = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {gradeLevels.map((level, index) => (
-              <Card key={index} className="bg-primary text-primary-foreground">
+              <Card key={index} className="bg-accent text-primary-foreground">
                 <CardHeader>
                   <CardTitle>{level.title}</CardTitle>
                 </CardHeader>
@@ -172,6 +265,7 @@ const page = () => {
           </Card>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
