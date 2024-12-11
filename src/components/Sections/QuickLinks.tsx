@@ -93,14 +93,14 @@ const services = [
     title: "Robo Play Zone",
     description:
       "Robotics Play Zone is designed to captivate and engage attendees of all ages, from grandchildren to grandparents, with offline, less screen-based entertainment. Our games are developed to be interactive, educational, and entertaining, embodying our tagline: Play, Learn, Innovate.",
-    href: "#robo-play",
+    href: "/robo-playzone",
     image: "/robo_logo.png",
   },
   {
     title: "InnoTech",
     description:
       "Workshops are designed to inspire, educate, and entertain. Whether you're a student in school or college, our workshops provide an engaging and hands-on learning experience that blends fun with practical knowledge. Our tagline, 'Play, Learn, Innovate,' captures the essence of what we aim to deliver.",
-    href: "#innotech",
+    href: "/innotech-academy",
     image: "/inno.jpeg",
   },
 ];

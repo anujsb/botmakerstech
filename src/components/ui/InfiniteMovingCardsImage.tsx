@@ -98,7 +98,7 @@ export const InfiniteMovingCardsImage = ({
                 // filter: 'brightness()'
               }}
             />
-            <div className="relative z-10 p-6 bg-background/50 backdrop-blur-sm">
+            <div className="relative z-10 p-6 bg-background/50 backdrop-blur-sm flex flex-col justify-end">
               <h3 className="text-xl text-gray-900 text-center mb-4 font-semibold">
                 {item.title}
               </h3>
