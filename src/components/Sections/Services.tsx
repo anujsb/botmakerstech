@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const content = [
   {
-    title: "Robo Play Zone",
+    title: "Robo Playzone",
     description: "Hands-on robotics learning through interactive play and experimentation",
     content: (
         <div className="h-full w-full  flex items-center justify-center text-white">

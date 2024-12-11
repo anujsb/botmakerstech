@@ -56,12 +56,12 @@ const page = () => {
       <Header2 />
       <div className="container mx-auto px-4 py-8 text-justify">
         <h1 className="text-4xl font-bold mb-6  text-center">
-          Robotics Play Zone
+        Robo Playzone
         </h1>
         <Card className="mb-8 text-justify">
           <CardHeader>
             <CardTitle className="text-2xl">
-              Welcome to the Robotics Play Zone
+              Welcome to the RRobo Playzone
             </CardTitle>
             <CardDescription>
               
@@ -73,13 +73,13 @@ const page = () => {
             entertaining experiences for all ages.
             </p>
             <p className="mb-4">
-              Our Robotics Play Zone is designed to captivate and engage
+              Our Robo Playzone is designed to captivate and engage
               attendees of all ages, from grandchildren to grandparents, with
               offline, less screen-based entertainment. Our games embody our
               tagline: Play, Learn, Innovate.
             </p>
             <h3 className="text-xl font-semibold mb-2">
-              Why Choose the Robotics Play Zone?
+              Why Choose the Robo Playzone?
             </h3>
             <ul className="list-disc pl-5 mb-4 space-y-2">
               <li>

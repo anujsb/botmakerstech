@@ -7,9 +7,9 @@
 
 // const services = [
 //   {
-//     title: "Robo Play Zone",
+//     title: "Robo Playzone",
 //     description:
-//       "Robotics Play Zone is designed to captivate and engage attendees of all ages, from grandchildren to grandparents, with offline, less screen-based entertainment. Our games are developed to be interactive, educational, and entertaining, embodying our tagline: Play, Learn, Innovate.",
+//       "Robo Playzone is designed to captivate and engage attendees of all ages, from grandchildren to grandparents, with offline, less screen-based entertainment. Our games are developed to be interactive, educational, and entertaining, embodying our tagline: Play, Learn, Innovate.",
 //     // icon: Bot,
 //     href: "#robo-play",
 //     image:"/robo_logo.png",
@@ -90,9 +90,9 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 
 const services = [
   {
-    title: "Robo Play Zone",
+    title: "Robo Playzone",
     description:
-      "Robotics Play Zone is designed to captivate and engage attendees of all ages, from grandchildren to grandparents, with offline, less screen-based entertainment. Our games are developed to be interactive, educational, and entertaining, embodying our tagline: Play, Learn, Innovate.",
+      "Robo Playzone is designed to captivate and engage attendees of all ages, from grandchildren to grandparents, with offline, less screen-based entertainment. Our games are developed to be interactive, educational, and entertaining, embodying our tagline: Play, Learn, Innovate.",
     href: "/robo-playzone",
     image: "/robo_logo.png",
   },

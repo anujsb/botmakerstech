@@ -155,7 +155,7 @@ export default function AboutPage() {
             </motion.div>
             <p className="text-lg leading-relaxed md:w-1/2">
               At Botmakers Pvt. Ltd., we're redefining how people engage with
-              technology. Through our Robo Play Zones, where fun meets learning,
+              technology. Through our Robo Playzone, where fun meets learning,
               and InnoTech Academy's hands-on education, we bring robotics,
               drones, and innovations to life. Our mission is simple: make tech
               accessible, spark curiosity, and empower the next generation of
@@ -185,7 +185,7 @@ export default function AboutPage() {
               </motion.div>
               <p className="text-lg leading-relaxed md:w-1/2">
                 At Botmakers Pvt. Ltd., we spark a passion for technology by
-                blending learning with innovation. Our Robo Play Zones offer
+                blending learning with innovation. Our Robo Playzone offer
                 fun, hands-on experiences with robotics and drones, while
                 InnoTech Academy integrates emerging tech into education,
                 reaching learners from KG to PG across urban and rural areas.

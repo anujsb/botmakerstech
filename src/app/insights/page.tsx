@@ -361,7 +361,7 @@ export default function InsightsPage() {
   const caseStudies = [
     {
       title:
-        "The Future of Edutainment Why Robotics Play Zones Are Here to Stay",
+        "The Future of Edutainment Why Robo Playzone Are Here to Stay",
       excerpt:
         "How Botmakers Pvt. Ltd. partnered with the state government to bring cutting-edge technology education to underserved areas.",
       content: (
@@ -373,7 +373,7 @@ export default function InsightsPage() {
             <ul className="list-inside list-disc space-y-2 mt-4 text-justify">
               <li>
                 <strong>Bridging the Skills Gap:</strong> India faces a
-                significant skills gap in STEM fields. Robotics play zones can
+                significant skills gap in STEM fields. Robo Playzone can
                 help bridge this gap by providing practical, hands-on exposure
                 to advanced technologies like robotics, AI, and IoT.
               </li>
@@ -388,7 +388,7 @@ export default function InsightsPage() {
                 are ready for automation and AI-powered industries.
               </li>
               <li>
-                <strong>Inclusivity in Education:</strong> Robotics play zones
+                <strong>Inclusivity in Education:</strong> Robo Playzone
                 can democratize access to STEM learning by bringing interactive,
                 technology-driven experiences to schools and communities
                 nationwide.
@@ -401,19 +401,19 @@ export default function InsightsPage() {
               Global Success Stories and Lessons for India
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Robotics play zones have already proven successful in countries
+            Robo Playzone have already proven successful in countries
               like Japan, South Korea, the USA, and China. Here are some lessons
               India can learn from these global examples:
             </p>
             <ul className="list-inside list-disc space-y-2 mt-4 text-justify">
               <li>
                 <strong>Japan:</strong> Integrating robotics into daily life,
-                Japan offers robotics play zones in museums and public spaces to
+                Japan offers Robo Playzone in museums and public spaces to
                 introduce people to cutting-edge technology.
               </li>
               <li>
                 <strong>South Korea:</strong> South Korea’s government has made
-                robotics play zones a part of their education policies, ensuring
+                Robo Playzone a part of their education policies, ensuring
                 that STEM education reaches all sectors of society.
               </li>
               <li>
@@ -422,7 +422,7 @@ export default function InsightsPage() {
                 role of institutions in fostering STEM education.
               </li>
               <li>
-                <strong>China:</strong> With robotics play zones in schools and
+                <strong>China:</strong> With Robo Playzone in schools and
                 public spaces, China has successfully made STEM accessible to
                 millions of students across the country.
               </li>
@@ -472,7 +472,7 @@ export default function InsightsPage() {
             </h2>
             <p className="mt-4 text-lg text-gray-600 text-justify">
               India’s journey toward becoming a global technology leader
-              requires a focus on STEM education. Robotics play zones provide an
+              requires a focus on STEM education. Robo Playzone provide an
               engaging, scalable solution to equip the next generation with the
               necessary skills for the future. By making learning fun and
               interactive, these play zones are shaping a generation of
