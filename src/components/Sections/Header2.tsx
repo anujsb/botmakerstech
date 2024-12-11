@@ -41,9 +41,11 @@ export function Header2() {
           <NavLinks />
         </nav>
         <div className="flex items-center space-x-4">
+          <Link href="/contact">
           <Button className="hidden bg-[#F26D3D] text-white hover:bg-[#E25D2D] md:inline-flex">
             Contact Us
           </Button>
+          </Link>
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" className="md:hidden">
@@ -55,9 +57,12 @@ export function Header2() {
               <nav className="flex flex-col space-y-4 justify-between h-full">
                 <div className="flex flex-col space-y-4">
                   <NavLinks />
+                  <Link href="/contact">
+
                   <Button className="bg-[#F26D3D] text-white hover:bg-[#E25D2D]">
                     Contact Us
                   </Button>
+                  </Link>
                 </div>
                 <div className="flex justify-end items-end">
                   <Image

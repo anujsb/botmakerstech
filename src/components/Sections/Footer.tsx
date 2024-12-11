@@ -8,9 +8,10 @@ import {
   Youtube,
   Mail,
   MapPin,
+  Phone,
 } from "lucide-react";
 
-export const  Footer = () => {
+export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
@@ -159,11 +160,11 @@ export const  Footer = () => {
                 Contact
               </h3>
               <div className="space-y-2 text-gray-600">
-                <div className="flex items-center space-x-2 text-center text-xs">
-                  <Mail className="h-4 w-4" />
-                  <span>contact@botmakerstech.in</span>
+                <div className="flex items-center space-x-2 text-start text-sm">
+                  <Phone className="h-4 w-4" />
+                  <span>+91 766 645 1946</span>
                 </div>
-                <div className="flex items-center space-x-2 text-center text-xs">
+                <div className="flex items-center space-x-2 text-start text-sm">
                   <MapPin className="h-4 w-4" />
                   <span>Baner, Pune, Maharashtra</span>
                 </div>
