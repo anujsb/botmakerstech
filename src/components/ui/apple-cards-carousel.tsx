@@ -222,7 +222,7 @@ export const Card = ({
               </Button>
               <motion.p
                 layoutId={layout ? `category-${card.title}` : undefined}
-                className=" text-2xl md:text-5xl font-semibold text-black"
+                className=" text-2xl md:text-4xl font-semibold text-black "
               >
                 {card.category}
               </motion.p>

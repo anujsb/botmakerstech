@@ -107,57 +107,57 @@ const DummyContent = () => {
 };
 
 const data = [
+  // {
+  //   category: "Extra china.",
+  //   title: "",
+  //   src: "/Extra china.jpg",
+  //   content: <DummyContent />,
+  // },
   {
-    category: "Extra china.",
-    title: "",
-    src: "/Extra china.jpg",
-    content: <DummyContent />,
-  },
-  {
-    category: "Extra Russia.",
+    category: "MoU Signed with PromBot, Russia.",
     title: "",
     src: "/EXTRA RUSSIA_.jpg",
     content: <DummyContent />,
   },
   {
-    category: "IIT, Indore - Demonstration for Indian Armed forces.",
+    category: "IT Indore Demo for Indian Armed Forces.",
     title: "",
     src: "/stories3.jpg",
     content: <DummyContent />,
   },
 
   {
-    category: "Team orby from South Korea.",
+    category: "Team Orby Representing South Korea",
     title: "",
     src: "/stories4.jpg",
     content: <DummyContent />,
   },
   {
-    category: "VJTI - Matunga",
+    category: "Tech Event at VJTI Mumbai Campus",
     title: "",
     src: "/stories1.jpg",
     content: <DummyContent />,
   },
   {
-    category: "Workshop - Sinhgad College.",
+    category: "Workshop at Sinhgad College,  Pune",
     title: "",
     src: "/stories2.jpg",
     content: <DummyContent />,
   },
   {
-    category: "XMIND MOU.",
+    category: "Xmind Memorandum of Understanding, China",
     title: "",
     src: "/XMIND MOU.jpg",
     content: <DummyContent />,
   },
   {
-    category: "Asian Games hangzou",
+    category: "Hangzhou Asian Games Techsport Meetup",
     title: "",
     src: "/Asian Games hangzou.jpeg",
     content: <DummyContent />,
   },
   {
-    category: "Macsut Shadaev, the Minister of Digital Development, Communications, and Mass Media of the Russian Federation",
+    category: "Russia's Digital Minister Macsut Shadaev",
     title: "",
     src: "/stories9.jpeg",
     content: <DummyContent />,
