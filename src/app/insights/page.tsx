@@ -624,7 +624,7 @@ export default function InsightsPage() {
                       <h3 className="text-2xl font-semibold mb-2">
                         {study.title}
                       </h3>
-                      <p className="text-justify my-4">
+                      <p className="text-justify my3-4">
                         {study.excerpt}
                       </p>
                       <h4 className="font-semibold mb-2">Key Results:</h4>

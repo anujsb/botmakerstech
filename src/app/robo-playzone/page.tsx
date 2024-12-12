@@ -131,7 +131,7 @@ const page = () => {
                   <div className="grid md:grid-cols-2 gap-6 h-[500px]">
                     <div className="flex flex-col h-full">
                       <AspectRatio
-                        ratio={15 / 9}
+                        ratio={15 / 7}
                         className="mb-4 flex-shrink-0"
                       >
                         <Image
@@ -141,7 +141,7 @@ const page = () => {
                           className="rounded-lg object-cover"
                         />
                       </AspectRatio>
-                      <p className="flex-grow overflow-auto">{game.content}</p>
+                      <p className="flex-grow overflow-auto text-lg">{game.content}</p>
                     </div>
                     <div className="h-full rounded-lg">
                       <video
