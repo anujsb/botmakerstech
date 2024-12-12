@@ -264,7 +264,7 @@ export default function AboutPage() {
           <h2 className="text-4xl font-bold text-center mb-12">
             Leadership Team
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {leaders.map((leader, index) => (
               <motion.div key={index} variants={fadeIn}>
                 <Card className="bg-white border-none shadow-lg overflow-hidden h-full pb-4">
@@ -299,6 +299,50 @@ export default function AboutPage() {
                           <Badge
                             variant="secondary"
                             className="mb-4 bg-[#fbdbcb] text-[#ff6101]"
+                          >
+                            {leader.role}
+                          </Badge>
+                        </div>
+                        <p className="text-sm">{leader.bio}</p>
+                      </div>
+                    </CardContent>
+                  </div>
+                </Card>
+              </motion.div>
+            ))}
+          </div> */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {leaders.map((leader, index) => (
+              <motion.div key={index} variants={fadeIn}>
+                <Card className="bg-white border-none shadow-lg overflow-hidden h-full pb-4">
+                  <div className="flex flex-col md:flex-row h-full">
+                    <div className="w-full md:w-1/3 relative aspect-square md:aspect-auto">
+                      <Image
+                        src={leader.image}
+                        alt={leader.name}
+                        fill
+                        className="object-cover rounded-t-xl md:rounded-l-xl md:rounded-tr-none"
+                      />
+                    </div>
+                    <CardContent className="w-full md:w-2/3 p-6 flex flex-col justify-between">
+                      <div>
+                        <h3 className="text-2xl font-semibold mb-2">
+                          {leader.name}
+                        </h3>
+                        <div className="flex items-center gap-4 mb-4">
+                          {leader.linkedin && (
+                            <Link
+                              href={leader.linkedin}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-[#0077B5] hover:opacity-80 transition-opacity"
+                            >
+                              <Linkedin className="w-6 h-6" />
+                            </Link>
+                          )}
+                          <Badge
+                            variant="secondary"
+                            className="bg-[#fbdbcb] text-[#ff6101]"
                           >
                             {leader.role}
                           </Badge>
