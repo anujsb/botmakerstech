@@ -1,70 +1,165 @@
-"use client";
+// "use client";
 
+// import React from "react";
+// import { InfiniteMovingCardsImage } from "../ui/InfiniteMovingCardsImage";
+
+// export function SuccessStories() {
+//   return (
+//     <div className=" rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden pt-20">
+//       <div className="px-10  container mx-auto">
+//         <h2 className="text-3xl text-gray-900 sm:text-4xl text-center mb-4 font-bold">
+//           Success Stories
+//         </h2>
+//         <p className="text-center text-lg mb-8 max-w-2xl mx-auto text-gray-600 "></p>
+//       </div>
+//       <InfiniteMovingCardsImage
+//         items={testimonials}
+//         direction="right"
+//         speed="slow"
+//       />
+//     </div>
+//   );
+// }
+
+// const testimonials = [
+//   {
+//     image: "/stories1.jpg", // Replace with actual image URLs
+//     title: "Expand",
+//     description: "Sharing Knowledge.",
+//   },
+//   {
+//     image: "/stories2.jpg",
+//     title: "Workshops",
+//     description: "Learn and grow",
+//   },
+//   {
+//     image: "/stories3.jpg",
+//     title: "Expos",
+//     description: "Explore New Tech",
+//   },
+//   {
+//     image: "/stories4.jpg",
+//     title: "Moving Together",
+//     description: "Team Collabration.",
+//   },
+//   {
+//     image: "/stories5.jpeg",
+//     title: "MoU - xmind China",
+//     description: "Learn and grow",
+//   },
+//   {
+//     image: "/stories6.jpeg",
+//     title: "Taiwan robotic community",
+//     description: "",
+//   },
+//   {
+//     image: "/stories7.jpeg",
+//     title: "Xmind China",
+//     description: "",
+//   },
+//   {
+//     image: "/stories8.jpeg",
+//     title: "PromBot Russia",
+//     description: "",
+//   },
+//   {
+//     image: "/stories9.jpeg",
+//     title: "Russian Minister",
+//     description: "",
+//   },
+// ];
+
+
+"use client";
+import Image from "next/image";
 import React from "react";
-import { InfiniteMovingCardsImage } from "../ui/InfiniteMovingCardsImage";
+import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 
 export function SuccessStories() {
+  const cards = data.map((card, index) => (
+    <Card key={card.src} card={card} index={index} />
+  ));
+
   return (
-    <div className=" rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden pt-20">
-      <div className="px-10  container mx-auto">
-        <h2 className="text-3xl text-gray-900 sm:text-4xl text-center mb-4 font-bold">
-          Success Stories
-        </h2>
-        <p className="text-center text-lg mb-8 max-w-2xl mx-auto text-gray-600 "></p>
-      </div>
-      <InfiniteMovingCardsImage
-        items={testimonials}
-        direction="right"
-        speed="slow"
-      />
+    <div className="w-full h-full py-20">
+      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+        Get to know your iSad.
+      </h2>
+      <Carousel items={cards} />
     </div>
   );
 }
 
-const testimonials = [
+const DummyContent = () => {
+  return (
+    <>
+      {[...new Array(3).fill(1)].map((_, index) => {
+        return (
+          <div
+            key={"dummy-content" + index}
+            className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
+          >
+          </div>
+        );
+      })}
+    </>
+  );
+};
+
+const data = [
   {
-    image: "/stories1.jpg", // Replace with actual image URLs
-    title: "Expand",
-    description: "Sharing Knowledge.",
+    category: "Extra china.",
+    title: "",
+    src: "/Extra china.jpg",
+    content: <DummyContent />,
   },
   {
-    image: "/stories2.jpg",
-    title: "Workshops",
-    description: "Learn and grow",
+    category: "Extra Russia.",
+    title: "",
+    src: "/EXTRA RUSSIA_.jpg",
+    content: <DummyContent />,
   },
   {
-    image: "/stories3.jpg",
-    title: "Expos",
-    description: "Explore New Tech",
+    category: "IIT, Indore - Demonstration for Indian Armed forces.",
+    title: "",
+    src: "/stories3.jpg",
+    content: <DummyContent />,
+  },
+
+  {
+    category: "Team orby from South Korea.",
+    title: "",
+    src: "/stories4.jpg",
+    content: <DummyContent />,
   },
   {
-    image: "/stories4.jpg",
-    title: "Moving Together",
-    description: "Team Collabration.",
+    category: "VJTI - Matunga",
+    title: "",
+    src: "/stories1.jpg",
+    content: <DummyContent />,
   },
   {
-    image: "/stories5.jpeg",
-    title: "MoU - xmind China",
-    description: "Learn and grow",
+    category: "Workshop - Sinhgad College.",
+    title: "",
+    src: "/stories2.jpg",
+    content: <DummyContent />,
   },
   {
-    image: "/stories6.jpeg",
-    title: "Taiwan robotic community",
-    description: "",
+    category: "XMIND MOU.",
+    title: "",
+    src: "/XMIND MOU.jpg",
+    content: <DummyContent />,
   },
   {
-    image: "/stories7.jpeg",
-    title: "Xmind China",
-    description: "",
+    category: "Asian Games hangzou",
+    title: "",
+    src: "/Asian Games hangzou.jpeg",
+    content: <DummyContent />,
   },
   {
-    image: "/stories8.jpeg",
-    title: "PromBot Russia",
-    description: "",
-  },
-  {
-    image: "/stories9.jpeg",
-    title: "Russian Minister",
-    description: "",
+    category: "Macsut Shadaev, the Minister of Digital Development, Communications, and Mass Media of the Russian Federation",
+    title: "",
+    src: "/stories9.jpeg",
+    content: <DummyContent />,
   },
 ];

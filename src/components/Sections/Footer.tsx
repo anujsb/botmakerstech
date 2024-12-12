@@ -24,7 +24,7 @@ export const Footer = () => {
     },
     {
       icon: BsTwitterX,
-      href: "https://x.com/anujsbhuyar",
+      href: "https://x.com/BotMakersPvtLtd",
       label: "Twitter",
     },
     {
