@@ -136,13 +136,21 @@ const page = () => {
           /> */}
         </motion.div>
         <motion.h1
-          className="text-5xl font-bold mb-4 relative z-10 mt-10"
+          className="text-5xl font-bold mb-4 relative z-10"
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
         >
           Workshops{" "}
         </motion.h1>
+        <motion.p
+          className="text-2xl relative z-10 max-w-2xl mx-auto"
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.7, duration: 0.8 }}
+        >
+          inspire, educate, and entertain.{" "}
+        </motion.p>
       </motion.header>
       <div className="container mx-auto px-4 py-8">
         <p className="text-center mb-12 max-w-2xl mx-auto">
