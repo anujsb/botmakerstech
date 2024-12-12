@@ -169,7 +169,7 @@ const page = () => {
         </Tabs>
 
         <div className="max-w-6xl mx-auto px-4 py-8 m-4">
-          <h2 className="text-3xl font-bold text-center mb-8">
+          <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 font-sans mb-8 text-center">
             Why Choose the Robo Playzone?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -196,7 +196,9 @@ const page = () => {
         </div>
         <Card className="border-none shadow-none">
           <CardHeader>
-            <CardTitle className="text-2xl">Demonstration Robots</CardTitle>
+            <CardTitle className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 font-sans mb-8 text-center">
+              Demonstration Robots
+            </CardTitle>
           </CardHeader>
           <CardContent>
             <div className="grid sm:grid-flow-row  md:grid-flow-col gap-4">

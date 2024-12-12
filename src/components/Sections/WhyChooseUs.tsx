@@ -19,8 +19,9 @@ export const WhyChooseUs = () => {
   return (
     <div className="w-full flex items-center justify-center pt-20">
       <div className="px-10  container mx-auto">
-      <h2 className="text-3xl text-gray-900 sm:text-4xl text-center mb-4 font-bold">
-      Why Choose Us</h2>
+        <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 font-sans">
+        Why Choose Us
+        </h2>
         <p className="text-center text-lg mb-8 max-w-2xl mx-auto text-gray-600 ">
           At BotMakers, we blend fun, learning, and cutting-edge technology to
           inspire young minds and drive innovation.
@@ -39,7 +40,7 @@ export const WhyChooseUs = () => {
           ))}
         </div> */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 ">
-        {/* <div className="flex items-center justify-between gap-6"> */}
+          {/* <div className="flex items-center justify-between gap-6"> */}
           {reasons.map((reason, index) => (
             <div key={index}>
               <div className="h-full hover:shadow-lg transition-shadow duration-300 rounded-xl border">

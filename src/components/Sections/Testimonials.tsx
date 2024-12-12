@@ -62,8 +62,8 @@ export function Testimonials() {
   return (
     <div className="rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden pt-20">
       <div className="px-10  container mx-auto">
-        <h2 className="text-3xl text-gray-900 sm:text-4xl text-center mb-4 font-bold">
-          Testimonials
+        <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 font-sans">
+          Testimonials{" "}
         </h2>
         <p className="text-center text-lg mb-8 max-w-2xl mx-auto text-gray-600 "></p>
       </div>
