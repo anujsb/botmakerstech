@@ -120,7 +120,7 @@ const data = [
     content: <DummyContent />,
   },
   {
-    category: "IT Indore Demo for Indian Armed Forces.",
+    category: "IIT Indore Demo: Indian Forces",
     title: "",
     src: "/stories3.jpg",
     content: <DummyContent />,
