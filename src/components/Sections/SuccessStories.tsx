@@ -116,7 +116,7 @@ const data = [
   {
     category: "MoU Signed with PromBot, Russia.",
     title: "",
-    src: "/EXTRA RUSSIA_.jpg",
+    src: "/success1.jpeg",
     content: <DummyContent />,
   },
   {
@@ -159,7 +159,7 @@ const data = [
   {
     category: "Russia's Digital Minister, Shadaev",
     title: "",
-    src: "/stories9.jpeg",
+    src: "/successlast.jpeg",
     content: <DummyContent />,
   },
 ];

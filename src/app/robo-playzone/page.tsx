@@ -154,7 +154,7 @@ const page = () => {
                       <video
                         src={game.video}
                         title={`${game.title} video`}
-                        className="w-full h-full rounded-lg object-contain "
+                        className="w-full h-full rounded-lg object-contain"
                         autoPlay
                         loop
                         muted
