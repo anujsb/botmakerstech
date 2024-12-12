@@ -150,11 +150,11 @@ const page = () => {
                       </AspectRatio>
                       <p className="flex-grow overflow-auto">{game.content}</p>
                     </div>
-                    <div className="h-full">
+                    <div className="h-full rounded-lg">
                       <video
                         src={game.video}
                         title={`${game.title} video`}
-                        className="w-full h-full rounded-lg object-cover"
+                        className="w-full h-full rounded-lg object-contain "
                         autoPlay
                         loop
                         muted
