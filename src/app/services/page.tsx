@@ -116,7 +116,7 @@ export default function ServicesPage() {
     <div className="bg-[#ffffff] text-[#050315]">
       <Header2 />
       <motion.header
-        className="bg-[#ff6101] text-white py-20 text-center relative overflow-hidden"
+        className="bg-[#ff6101] text-white py-8 text-center relative overflow-hidden"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -186,7 +186,7 @@ export default function ServicesPage() {
                     {service.description}
                   </p>
 
-                  <div className="grid md:grid-cols-2 gap-4 mb-4">
+                  <div className="grid md:grid-cols-2 gap-4 mt-2">
                     <div>
                       <h4 className="font-semibold mb-2 text-[#ff6101]">
                         Key Details

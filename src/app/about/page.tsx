@@ -109,7 +109,7 @@ export default function AboutPage() {
     <div className="bg-[#ffffff] text-[#050315] text-justify">
       <Header2 />
       <motion.header
-        className="bg-primary text-white py-20 text-center relative overflow-hidden"
+        className="bg-primary text-white py-8 text-center relative overflow-hidden"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -128,7 +128,7 @@ export default function AboutPage() {
           /> */}
         </motion.div>
         <motion.h1
-          className="text-5xl font-bold mb-4 relative z-10 mt-10"
+          className="text-5xl font-bold mb-4 relative z-10"
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
@@ -163,12 +163,22 @@ export default function AboutPage() {
               />
             </motion.div>
             <p className="text-lg leading-relaxed md:w-1/2">
-              At Botmakers Pvt. Ltd., we're redefining how people engage with
-              technology. Through our Robo Playzone, where fun meets learning,
-              and InnoTech Academy's hands-on education, we bring robotics,
-              drones, and innovations to life. Our mission is simple: make tech
-              accessible, spark curiosity, and empower the next generation of
-              leaders in India.
+              At Botmakers Pvt. Ltd., we are committed to transforming the way
+              people experience and interact with technology. Through our Robo
+              Playzone, where fun meets learning, and InnoTech Academy's
+              hands-on educational programs, we create immersive environments
+              that bring robotics, drones, and cutting-edge innovations to life.
+              Our mission is to make advanced technology accessible to everyone,
+              spark curiosity, and nurture the next generation of innovators,
+              problem-solvers, and leaders in India. By blending play, learning,
+              and exploration, we inspire young minds to think creatively,
+              embrace challenges, and build future-ready skills. We believe
+              technology should be both exciting and educational. Our
+              initiatives empower students, educators, and tech enthusiasts by
+              offering engaging workshops, interactive play zones, and
+              innovative learning kits. With a focus on experiential learning,
+              we bridge the gap between theory and practical application,
+              ensuring a deeper understanding of STEM concepts.
             </p>
           </CardContent>
         </Card>
@@ -193,14 +203,25 @@ export default function AboutPage() {
                 />
               </motion.div>
               <p className="text-lg leading-relaxed md:w-1/2">
-                At Botmakers Pvt. Ltd., we spark a passion for technology by
-                blending learning with innovation. Our Robo Playzone offer fun,
-                hands-on experiences with robotics and drones, while InnoTech
-                Academy integrates emerging tech into education, reaching
-                learners from KG to PG across urban and rural areas. Committed
-                to inclusivity, we empower every student with the tools to shape
-                a tech-driven future and thrive in a world where innovation
-                knows no bounds.
+                At Botmakers Pvt. Ltd., our purpose is to ignite a lifelong
+                passion for technology by merging learning with innovation. We
+                believe that curiosity is the foundation of progress, and our
+                mission is to cultivate that curiosity through interactive,
+                hands-on experiences. Through our Robo Playzone, we create
+                exciting learning environments where robotics, drones, and
+                cutting-edge technologies become tools of exploration,
+                creativity, and fun. InnoTech Academy extends our reach by
+                integrating emerging technologies into education, catering to
+                learners from KG to PG in both urban and rural areas. By
+                combining structured learning with real-world applications, we
+                prepare students for the future’s evolving technological
+                landscape. Our commitment to inclusivity drives everything we
+                do. We believe that every student, regardless of their location
+                or economic background, deserves the opportunity to learn,
+                create, and thrive in a tech-driven world. By providing access
+                to state-of-the-art learning tools and expert guidance, we
+                empower students to become confident innovators and
+                changemakers.
               </p>
             </CardContent>
           </Card>
@@ -221,7 +242,7 @@ export default function AboutPage() {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-3 text-[#ff6101]">
                     {value.icon}
-                    <span>{value.title}</span>
+                    <span className="text-2xl">{value.title}</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>

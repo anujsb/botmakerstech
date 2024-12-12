@@ -10,8 +10,7 @@ import {
   MapPin,
   Phone,
 } from "lucide-react";
-import { BsTwitterX } from "react-icons/bs";
-
+import { BsTwitterX, BsWhatsapp } from "react-icons/bs";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -57,50 +56,55 @@ export const Footer = () => {
     { label: "Contact", href: "/contact" },
   ];
 
-  const legalLinks = [
-    { label: "Privacy", href: "/privacy" },
-    { label: "Terms and Conditions", href: "/terms" },
-  ];
-
   return (
-    <footer className="bg-orange-50 text-gray-800 text-start pt-10">
-      <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <footer className="bg-orange-50 text-gray-800 pt-12 pb-6">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Brand and Social Links */}
-          <div className="">
-            <Link href="/" className="inline-block">
+          <div className="flex flex-col items-center text-center">
+            <Link href="/" className="mb-4">
               <Image
                 src="/logo-black.webp"
-                width={120}
-                height={80}
+                width={150}
+                height={100}
                 alt="Botmakers Logo"
-                className="rounded-lg transition-transform hover:scale-105"
+                className="transition-transform hover:scale-105"
               />
             </Link>
-            <p className="text-gray-600 ">
-              Shaping tomorrow's Innovators
+            <p className="text-gray-600 mb-4 max-w-xs">
+              Shaping Tomorrow's Innovators
             </p>
 
-            <div className="flex space-x-4 mt-4">
+            <div className="flex space-x-6 mb-4">
               {socialLinks.map(({ icon: Icon, href, label }) => (
                 <a
                   key={label}
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-blue-600 transition-colors"
+                  className="text-gray-500 hover:text-blue-600 transition-colors"
                   aria-label={label}
                 >
                   <Icon className="h-6 w-6" />
                 </a>
               ))}
             </div>
+
+            <nav className="flex flex-wrap justify-center gap-4 text-sm text-gray-600">
+              <Link href="/terms" className="hover:text-blue-600">
+                Terms of use
+              </Link>
+              <span className="text-gray-300">|</span>
+              <Link href="/privacy" className="hover:text-blue-600">
+                Privacy policy
+              </Link>
+            </nav>
           </div>
 
           {/* Navigation Links */}
-          <div className="grid grid-cols-2 gap-8">
+          <div className="grid grid-cols-2 gap-6 md:gap-10 justify-center text-center">
             <div>
-              <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-4">
+              <h3 className="text-sm font-bold text-gray-800 uppercase mb-4">
                 Menu
               </h3>
               <ul className="space-y-2">
@@ -118,7 +122,7 @@ export const Footer = () => {
             </div>
 
             <div>
-              <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-4">
+              <h3 className="text-sm font-bold text-gray-800 uppercase mb-4">
                 Company
               </h3>
               <ul className="space-y-2">
@@ -136,49 +140,62 @@ export const Footer = () => {
             </div>
           </div>
 
-          {/* Legal and Contact */}
-          <div className=" grid grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-4">
-                Legal
-              </h3>
-              <ul className="space-y-2">
-                {legalLinks.map(({ label, href }) => (
-                  <li key={label}>
-                    <Link
-                      href={href}
-                      className="text-gray-600 hover:text-blue-600 transition-colors"
-                    >
-                      {label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-4">
-                Contact
-              </h3>
-              <div className="space-y-2 text-gray-600">
-                <div className="flex items-center space-x-2 text-start text-sm">
-                  <Phone className="h-4 w-4" />
-                  <span>+91 766 645 1946</span>
-                </div>
-                <div className="flex items-center space-x-2 text-start text-sm">
-                  <MapPin className="h-4 w-4" />
-                  <span>Baner, Pune, Maharashtra</span>
-                </div>
+          {/* Contact Information */}
+          <div className="space-y-4 text-center md:text-left">
+            <h3 className="text-sm font-bold text-gray-800 uppercase mb-4">
+              Contact Us
+            </h3>
+            <div className="space-y-3 text-gray-600">
+              <div className="flex items-center justify-center md:justify-start">
+                <Phone className="h-5 w-5 text-gray-400 mr-3" />
+                <a
+                  href="tel:+917666451946"
+                  className="text-blue-600 hover:underline"
+                >
+                  +91 766 645 1946
+                </a>
+              </div>
+              <div className="flex items-center justify-center md:justify-start">
+                <BsWhatsapp className="h-5 w-5 text-gray-400 mr-3" />
+                <a
+                  href="https://api.whatsapp.com/send/?phone=917666451946&text&type=phone_number&app_absent=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  +91 766 645 1946
+                </a>
+              </div>
+              <div className="flex items-center justify-center md:justify-start">
+                <Mail className="h-5 w-5 text-gray-400 mr-3" />
+                <a
+                  href="mailto:contact@botmakerstech.in"
+                  className="text-blue-600 hover:underline"
+                >
+                  contact@botmakerstech.in
+                </a>
+              </div>
+              <div className="flex items-center justify-center md:justify-start">
+                <MapPin className="h-5 w-5 text-gray-400 mr-3" />
+                <a
+                  href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d54673.05871694681!2d73.77337841849369!3d18.548948794942167!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf3520496b5f%3A0xee34e55c54da61d2!2sBotMakers!5e0!3m2!1sen!2sus!4v1733826165124!5m2!1sen!2sus"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  Baner, Pune, Maharashtra
+                </a>
               </div>
             </div>
           </div>
         </div>
 
         {/* Copyright */}
-        <div className="mt-12 pt-8 border-t border-gray-200 text-center">
-          <p className="text-sm text-gray-600">
+        <div className="mt-12 pt-6 border-t border-gray-200 text-center">
+          <p className="text-sm text-gray-600 mb-2">
             &copy; {currentYear} Botmakers, Inc. All rights reserved.
           </p>
-          <p className="mt-2 text-sm text-gray-600">
+          <p className="text-sm text-gray-600">
             Website by{" "}
             <Link
               href="https://www.21bubbles.com"

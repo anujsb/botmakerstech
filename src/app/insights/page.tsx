@@ -360,10 +360,9 @@ export default function InsightsPage() {
 
   const caseStudies = [
     {
-      title:
-        "The Future of Edutainment Why Robo Playzone Are Here to Stay",
+      title: "The Future of Edutainment Why Robo Playzone Are Here to Stay",
       excerpt:
-        "How Botmakers Pvt. Ltd. partnered with the state government to bring cutting-edge technology education to underserved areas.",
+        "India’s march toward becoming a global technology powerhouse faces a critical challenge—a widening skills gap in STEM fields. The solution lies in early and interactive learning environments like Robo Playzone, where young minds can explore robotics, AI, and IoT through hands-on experiences. This approach not only fosters creativity but also equips students with essential skills for the tech-driven future of the Fourth Industrial Revolution. Global examples from Japan, South Korea, the USA, and China reveal how integrating robotics into education has transformed young learners into innovators. Inspired by these success stories, Botmakers Pvt. Ltd. is on a mission to revolutionize STEM learning in India by making robotics education accessible, interactive, and fun. Discover how Robo Playzone is already making an impact, reaching 500+ schools, training 1,000+ teachers, and inspiring 50,000+ students. Read the full case study to learn how India can lead the future of technology through engaging STEM education.",
       content: (
         <div className="text-justify">
           <section>
@@ -373,9 +372,9 @@ export default function InsightsPage() {
             <ul className="list-inside list-disc space-y-2 mt-4 text-justify">
               <li>
                 <strong>Bridging the Skills Gap:</strong> India faces a
-                significant skills gap in STEM fields. Robo Playzone can
-                help bridge this gap by providing practical, hands-on exposure
-                to advanced technologies like robotics, AI, and IoT.
+                significant skills gap in STEM fields. Robo Playzone can help
+                bridge this gap by providing practical, hands-on exposure to
+                advanced technologies like robotics, AI, and IoT.
               </li>
               <li>
                 <strong>Inspiring Innovation from a Young Age:</strong> Robotics
@@ -388,8 +387,8 @@ export default function InsightsPage() {
                 are ready for automation and AI-powered industries.
               </li>
               <li>
-                <strong>Inclusivity in Education:</strong> Robo Playzone
-                can democratize access to STEM learning by bringing interactive,
+                <strong>Inclusivity in Education:</strong> Robo Playzone can
+                democratize access to STEM learning by bringing interactive,
                 technology-driven experiences to schools and communities
                 nationwide.
               </li>
@@ -401,8 +400,8 @@ export default function InsightsPage() {
               Global Success Stories and Lessons for India
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-            Robo Playzone have already proven successful in countries
-              like Japan, South Korea, the USA, and China. Here are some lessons
+              Robo Playzone have already proven successful in countries like
+              Japan, South Korea, the USA, and China. Here are some lessons
               India can learn from these global examples:
             </p>
             <ul className="list-inside list-disc space-y-2 mt-4 text-justify">
@@ -413,8 +412,8 @@ export default function InsightsPage() {
               </li>
               <li>
                 <strong>South Korea:</strong> South Korea’s government has made
-                Robo Playzone a part of their education policies, ensuring
-                that STEM education reaches all sectors of society.
+                Robo Playzone a part of their education policies, ensuring that
+                STEM education reaches all sectors of society.
               </li>
               <li>
                 <strong>The USA:</strong> Science museums and robotics
@@ -422,9 +421,9 @@ export default function InsightsPage() {
                 role of institutions in fostering STEM education.
               </li>
               <li>
-                <strong>China:</strong> With Robo Playzone in schools and
-                public spaces, China has successfully made STEM accessible to
-                millions of students across the country.
+                <strong>China:</strong> With Robo Playzone in schools and public
+                spaces, China has successfully made STEM accessible to millions
+                of students across the country.
               </li>
             </ul>
           </section>
@@ -520,7 +519,7 @@ export default function InsightsPage() {
       {/* <Header /> */}
       <Header2 />
       <motion.header
-        className="bg-primary text-white py-24 text-center relative overflow-hidden"
+        className="bg-primary text-white py-8 text-center relative overflow-hidden"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -625,7 +624,7 @@ export default function InsightsPage() {
                       <h3 className="text-2xl font-semibold mb-2">
                         {study.title}
                       </h3>
-                      <p className="text-muted-foreground mb-4">
+                      <p className="text-justify my-4">
                         {study.excerpt}
                       </p>
                       <h4 className="font-semibold mb-2">Key Results:</h4>

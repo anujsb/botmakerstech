@@ -6,10 +6,12 @@ import { Textarea } from "@/components/ui/textarea";
 import { Send, Check, Loader2, Phone, Mail, MapPin } from "lucide-react";
 import { toast } from "react-toastify";
 import emailjs from "@emailjs/browser";
+import { BsWhatsapp } from "react-icons/bs";
 
 interface UserInput {
   name: string;
   email: string;
+  phone: string;
   message: string;
 }
 
@@ -17,6 +19,7 @@ const Contact: React.FC = () => {
   const [userInput, setUserInput] = useState<UserInput>({
     name: "",
     email: "",
+    phone: "",
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -59,6 +62,7 @@ const Contact: React.FC = () => {
     const emailParams = {
       name: userInput.name,
       email: userInput.email,
+      phone: userInput.phone,
       message: userInput.message,
     };
 
@@ -78,6 +82,7 @@ const Contact: React.FC = () => {
         setUserInput({
           name: "",
           email: "",
+          phone: "",
           message: "",
         });
         setIsSubmitted(true);
@@ -146,6 +151,24 @@ const Contact: React.FC = () => {
             </div>
             <div>
               <label
+                htmlFor="phone"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Your Phone Number:
+              </label>
+              <Input
+                type="tel"
+                id="phone"
+                name="phone"
+                value={userInput.phone}
+                onChange={handleChange}
+                className="mt-1"
+                placeholder="+91 XXX XXX XXXX"
+                disabled={isSubmitting || isSubmitted}
+              />
+            </div>
+            <div>
+              <label
                 htmlFor="message"
                 className="block text-sm font-medium text-gray-700"
               >
@@ -191,17 +214,33 @@ const Contact: React.FC = () => {
               Contact Information
             </h3>
             <div className="space-y-4">
-              <div className="flex items-center">
-                <Phone className="h-5 w-5 text-gray-400 mr-2" />
-                <span>+91 766 645 1946</span>
+              <div className="flex items-center ">
+                <Phone className="h-4 w-4 text-gray-400 mr-2" />
+                <a
+                  href="tel:+917666451946"
+                  className="hover:text-blue-600 hover:underline"
+                >
+                  +91 766 645 1946
+                </a>
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-gray-400 mr-2" />
                 <a
                   href="mailto:contact@botmakerstech.in"
-                  className="text-blue-600 hover:underline"
+                  className="hover:text-blue-600 hover:underline"
                 >
                   contact@botmakerstech.in
+                </a>
+              </div>
+              <div className="flex items-center space-x-2 text-start">
+                <BsWhatsapp className="h-4 w-4 text-gray-400 " />
+                <a
+                  href="https://api.whatsapp.com/send/?phone=917666451946&text&type=phone_number&app_absent=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  +91 766 645 1946
                 </a>
               </div>
               <div className="flex items-start">

@@ -78,7 +78,7 @@ const page = () => {
     <div>
       <Header2 />
       <motion.header
-        className="bg-[#ff6101] text-white py-10 text-center relative overflow-hidden"
+        className="bg-[#ff6101] text-white py-8 text-center relative overflow-hidden"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -95,14 +95,7 @@ const page = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
         >
-          {/* Robo Playzone */}
-          <Image
-            src="/Robo Playzone Name Logo.png"
-            alt="Robo Playzone Name Logo"
-            width={600}
-            height={300}
-            className="rounded-lg object-cover "
-          />
+          Robo Playzone
         </motion.h1>
         <motion.p
           className="text-2xl relative z-10"
@@ -110,7 +103,7 @@ const page = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.8 }}
         >
-          Transforming Ideas into Technological Realities
+          Fun For All Ages!
         </motion.p>
       </motion.header>
       <div className="container mx-auto px-4 py-8 text-justify">
@@ -209,7 +202,7 @@ const page = () => {
                 </p>
                 <ul className="list-disc pl-5 mb-4 space-y-2 text-justify">
                   <li>
-                    <strong>Leo Robotics Dogs:</strong> A versatile robotic dog
+                    <strong>Leo Robotics Dog:</strong> A versatile robotic dog
                     showcasing advanced mobility and agility.
                   </li>
                   <li>
@@ -234,7 +227,7 @@ const page = () => {
               </div>
               <div className="grid grid-flow-col col-span-2 gap-4">
                 <video
-                  width="310"
+                  width="410"
                   height="1000"
                   autoPlay
                   loop
@@ -242,7 +235,7 @@ const page = () => {
                   className="border border-accent rounded-xl shadow-lg shadow-accent "
                 >
                   <source
-                    src="https://botmakerstech.in/wp-content/uploads/2024/10/unitree.webm"
+                    src="/unitree.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
