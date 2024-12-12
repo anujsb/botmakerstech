@@ -10,6 +10,8 @@ import {
   MapPin,
   Phone,
 } from "lucide-react";
+import { BsTwitterX } from "react-icons/bs";
+
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -21,7 +23,7 @@ export const Footer = () => {
       label: "Facebook",
     },
     {
-      icon: Twitter,
+      icon: BsTwitterX,
       href: "https://x.com/anujsbhuyar",
       label: "Twitter",
     },

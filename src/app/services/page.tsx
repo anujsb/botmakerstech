@@ -54,7 +54,7 @@ export default function ServicesPage() {
         "Customized training modules in robotics and programming",
         "Expert-led sessions bridging theory and practical application",
       ],
-      image: "/workshop.jpg",
+      image: "/WhatsApp Image 2024-12-12 at 11.17.27.jpeg",
       benefits: [
         "Skill Development",
         "Industry-Relevant Expertise",

@@ -6,8 +6,8 @@ const associates = [
     { image: "/ass2.jpeg", text: "IIT Indore" },
     { image: "/ass3.jpeg", text: "BITS, Pilani" },
     { image: "/ass4.jpeg", text: "IIT Roorkee" },
-    { image: "/ass5.jpeg", text: "Technovanza VJTI" },
-    { image: "/ass6.jpeg", text: "D.Y. Patil Education Society" },
+    { image: "/Technovanza VJTI.jpg", text: "Technovanza VJTI" },
+    { image: "/D.Y. Patil Education Society.jpg", text: "D.Y. Patil Education Society" },
 ];
 
 const OurAssociates = () => {

@@ -1,11 +1,6 @@
 "use client";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Image from "next/image";
 import { Header2 } from "@/components/Sections/Header2";
@@ -83,7 +78,7 @@ const page = () => {
     <div>
       <Header2 />
       <motion.header
-        className="bg-[#ff6101] text-white py-20 text-center relative overflow-hidden"
+        className="bg-[#ff6101] text-white py-10 text-center relative overflow-hidden"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -95,12 +90,19 @@ const page = () => {
           transition={{ duration: 1.5 }}
         />
         <motion.h1
-          className="text-5xl font-bold mb-4 relative z-10 mt-10"
+          className="text-5xl font-bold mb-4 relative z-10  flex items-center justify-center"
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
         >
-          Robo Playzone
+          {/* Robo Playzone */}
+          <Image
+            src="/Robo Playzone Name Logo.png"
+            alt="Robo Playzone Name Logo"
+            width={600}
+            height={300}
+            className="rounded-lg object-cover "
+          />
         </motion.h1>
         <motion.p
           className="text-2xl relative z-10"
@@ -135,7 +137,10 @@ const page = () => {
                 <CardContent className="p-6">
                   <div className="grid md:grid-cols-2 gap-6 h-[500px]">
                     <div className="flex flex-col h-full">
-                      <AspectRatio ratio={15 / 9} className="mb-4 flex-shrink-0">
+                      <AspectRatio
+                        ratio={15 / 9}
+                        className="mb-4 flex-shrink-0"
+                      >
                         <Image
                           src={game.image}
                           alt={game.title}
@@ -202,11 +207,11 @@ const page = () => {
                 </p>
                 <ul className="list-disc pl-5 mb-4 space-y-2 text-justify">
                   <li>
-                    <strong>Unitree Dog:</strong> A versatile robotic dog
+                    <strong>Leo Robotics Dogs:</strong> A versatile robotic dog
                     showcasing advanced mobility and agility.
                   </li>
                   <li>
-                    <strong>XGO Mini Robot Dog:</strong> A compact, interactive
+                    <strong>Mickey - The Puppy:</strong> A compact, interactive
                     robot dog designed for engaging demonstrations.
                   </li>
                   <li>
@@ -265,23 +270,23 @@ const page = () => {
                 <div className="grid grid-flow-row row-span-2 gap-4 max-w-[300px]">
                   <div>
                     <Image
-                      src="/demo3.png"
+                      src="/Mickey - The Puppy.WEBP"
                       width={500}
                       height={500}
                       alt="Picture of the author"
                       className="border rounded-2xl"
                     />
-                    <p className="text-center mt-2">Xgo Mini</p>
+                    <p className="text-center mt-2">Mickey - The Puppy</p>
                   </div>
                   <div>
                     <Image
-                      src="/demo4.png"
+                      src="/Humanoid Robot.JPG"
                       width={500}
                       height={500}
                       alt="Picture of the author"
                       className="border rounded-2xl"
                     />
-                    <p className="text-center mt-2">Xgo Mini</p>
+                    <p className="text-center mt-2">Humanoid Robot</p>
                   </div>
                 </div>
               </div>
