@@ -28,7 +28,7 @@ const stagger = {
 export default function ServicesPage() {
   const services = [
     {
-      title: "Robotics Games Sale & Rent",
+      title: "Robotics Games Selling & Renting",
       icon: <ShoppingCart className="w-8 h-8 text-[#ff6101]" />,
       description:
         "Transform your events with cutting-edge interactive technology through our Robotics Games Sales & Rent Services.",
@@ -37,7 +37,7 @@ export default function ServicesPage() {
         "Flexible rental options for short-term engagements",
         "Unique experiences that blend technology and entertainment",
       ],
-      image: "/service1.png",
+      image: "/Robotics Games Selling & Renting.jpg",
       benefits: [
         "Engaging Interactive Experiences",
         "Customizable Tech Solutions",
@@ -179,10 +179,10 @@ export default function ServicesPage() {
                       alt={service.title}
                       width={600}
                       height={400}
-                      className="rounded-lg shadow-md w-full max-h-72 object-contain"
+                      className="rounded-lg shadow-md w-full max-h-72 object-cover"
                     />
                   </motion.div>
-                  <p className="text-lg mt-4 flgrowex-">
+                  <p className=" mt-4 flgrowex- text-start">
                     {service.description}
                   </p>
 
@@ -191,7 +191,7 @@ export default function ServicesPage() {
                       <h4 className="font-semibold mb-2 text-[#ff6101]">
                         Key Details
                       </h4>
-                      <ul className="list-disc list-inside text-sm space-y-1 text-justify">
+                      <ul className="list-disc list-inside text-xs space-y-1 text-start">
                         {service.details.map((detail, idx) => (
                           <li key={idx}>{detail}</li>
                         ))}
@@ -201,7 +201,7 @@ export default function ServicesPage() {
                       <h4 className="font-semibold mb-2 text-[#ff6101]">
                         Benefits
                       </h4>
-                      <ul className="list-disc list-inside text-sm space-y-1">
+                      <ul className="list-disc list-inside text-xs space-y-1 text-start">
                         {service.benefits.map((benefit, idx) => (
                           <li key={idx}>{benefit}</li>
                         ))}
