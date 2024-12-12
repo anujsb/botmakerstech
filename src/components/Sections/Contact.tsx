@@ -238,7 +238,7 @@ const Contact: React.FC = () => {
                   href="https://api.whatsapp.com/send/?phone=917666451946&text&type=phone_number&app_absent=0"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 hover:underline"
+                  className="hover:text-blue-600 hover:underline"
                 >
                   +91 766 645 1946
                 </a>

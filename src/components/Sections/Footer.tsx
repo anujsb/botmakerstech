@@ -150,7 +150,7 @@ export const Footer = () => {
                 <Phone className="h-5 w-5 text-gray-400 mr-3" />
                 <a
                   href="tel:+917666451946"
-                  className="text-blue-600 hover:underline"
+                  className="hover:text-blue-600 hover:underline"
                 >
                   +91 766 645 1946
                 </a>
@@ -161,7 +161,7 @@ export const Footer = () => {
                   href="https://api.whatsapp.com/send/?phone=917666451946&text&type=phone_number&app_absent=0"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 hover:underline"
+                  className="hover:text-blue-600 hover:underline"
                 >
                   +91 766 645 1946
                 </a>
@@ -170,7 +170,7 @@ export const Footer = () => {
                 <Mail className="h-5 w-5 text-gray-400 mr-3" />
                 <a
                   href="mailto:contact@botmakerstech.in"
-                  className="text-blue-600 hover:underline"
+                  className="hover:text-blue-600 hover:underline"
                 >
                   contact@botmakerstech.in
                 </a>
@@ -178,10 +178,10 @@ export const Footer = () => {
               <div className="flex items-center justify-center md:justify-start">
                 <MapPin className="h-5 w-5 text-gray-400 mr-3" />
                 <a
-                  href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d54673.05871694681!2d73.77337841849369!3d18.548948794942167!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf3520496b5f%3A0xee34e55c54da61d2!2sBotMakers!5e0!3m2!1sen!2sus!4v1733826165124!5m2!1sen!2sus"
+                  href="https://maps.app.goo.gl/QMeWisHEjCWRPgRP8"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 hover:underline"
+                  className="hover:text-blue-600 hover:underline"
                 >
                   Baner, Pune, Maharashtra
                 </a>
