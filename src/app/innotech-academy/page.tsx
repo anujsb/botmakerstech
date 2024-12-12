@@ -149,7 +149,7 @@ const page = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.8 }}
         >
-          inspire, educate, and entertain.{" "}
+          Unlocking Creativity through Hands-on Learning
         </motion.p>
       </motion.header>
       <div className="container mx-auto px-4 py-8">

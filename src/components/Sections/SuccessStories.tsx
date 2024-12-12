@@ -127,7 +127,7 @@ const data = [
   },
 
   {
-    category: "Team Orby Representing South Korea",
+    category: "Team Orby, South Korea",
     title: "",
     src: "/stories4.jpg",
     content: <DummyContent />,
@@ -145,19 +145,19 @@ const data = [
     content: <DummyContent />,
   },
   {
-    category: "Xmind Memorandum of Understanding, China",
+    category: "Xmind MOU signed in China.",
     title: "",
     src: "/XMIND MOU.jpg",
     content: <DummyContent />,
   },
   {
-    category: "Hangzhou Asian Games Techsport Meetup",
+    category: "Hangzhou Asian Games Techsport",
     title: "",
     src: "/Asian Games hangzou.jpeg",
     content: <DummyContent />,
   },
   {
-    category: "Russia's Digital Minister Macsut Shadaev",
+    category: "Russia's Digital Minister, Shadaev",
     title: "",
     src: "/stories9.jpeg",
     content: <DummyContent />,
