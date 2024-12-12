@@ -60,7 +60,7 @@ import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 
 export function Testimonials() {
   return (
-    <div className="rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden pt-20">
+    <div className="rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden pt-5">
       <div className="px-10  container mx-auto">
         <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 font-sans">
           Testimonials{" "}
