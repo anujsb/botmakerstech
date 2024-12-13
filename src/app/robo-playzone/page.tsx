@@ -228,7 +228,7 @@ const page = () => {
               <div className="grid grid-flow-col col-span-2 gap-4">
                 <video
                   width="410"
-                  height="1000"
+                  height="950"
                   autoPlay
                   loop
                   muted

@@ -85,7 +85,7 @@ export const Footer = () => {
                   className="text-gray-500 hover:text-blue-600 transition-colors"
                   aria-label={label}
                 >
-                  <Icon className="h-6 w-6" />
+                  <Icon className="h-7 w-7" />
                 </a>
               ))}
             </div>

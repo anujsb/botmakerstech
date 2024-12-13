@@ -60,10 +60,10 @@ const Contact2 = () => {
               <div className="flex items-start">
                 <MapPin className="h-5 w-5 text-gray-400 mr-2 mt-1" />
                 <address className="not-italic">
-                  Sr no 80, Ganranj Mangal Karyalay, Manik Padma Smruti,
-                  <br /> Plot no 13, near Ness Digital Engineering, Lalit
-                  Estate,
-                  <br /> Baner, Pune, Maharashtra 411045
+                  Botmakers Pvt. Ltd. Second floor, Manik Padma smruti, near
+                  Niramay,
+                  <br /> Ganraj chowk, Lalit Estate, Baner, Pune,
+                  Maharashtra 411045
                 </address>
               </div>
             </div>
