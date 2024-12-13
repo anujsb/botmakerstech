@@ -37,7 +37,7 @@ export default function ServicesPage() {
         "Flexible rental options for short-term engagements",
         "Unique experiences that blend technology and entertainment",
       ],
-      image: "/serv1.jpeg",
+      image: "/serv11.jpeg",
       benefits: [
         "Engaging Interactive Experiences",
         "Customizable Tech Solutions",

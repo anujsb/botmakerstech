@@ -18,9 +18,19 @@ const Contact2 = () => {
       {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-12"> */}
       <div className="flex flex-col items-center justify-center">
         <div className="my-4">
-          <Link href="https://aiforms.21bubbles.com/aiform/117">
+          {/* <Link href="https://aiforms.21bubbles.com/aiform/117">
             <Button>Contact Us</Button>
-          </Link>
+          </Link> */}
+
+          <iframe
+            src="https://aiforms.21bubbles.com/aiform/117"
+            width="100%"
+            height="600px"
+            frameBorder="0"
+            // style="border:0;"
+            allowFullScreen
+            title="Embedded Form"
+          ></iframe>
         </div>
         <div className="space-y-4">
           <div>
@@ -58,7 +68,7 @@ const Contact2 = () => {
                 </a>
               </div>
               <div className="flex items-start">
-                <MapPin className="h-5 w-5 text-gray-400 mr-2 mt-1" />
+                <MapPin className="h-7 w-7 text-gray-400 mr-3 mt-1" />
                 <address className="not-italic">
                   Botmakers Pvt. Ltd. Second floor, Manik Padma smruti, near
                   Niramay,
