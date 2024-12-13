@@ -12,14 +12,20 @@ const Video = () => {
           className="w-full h-full rounded-xl"
         ></iframe>
       </div> */}
-      <video width="900" height="500" autoPlay loop muted className="border border-accent rounded-xl shadow-lg shadow-accent">
+      {/* <video width="900" height="500" autoPlay loop muted className="border border-accent rounded-xl shadow-lg shadow-accent">
         <source src="/hero.mp4" type="video/mp4" />
-        {/* <track
-        src="/path/to/captions.vtt"
-        kind="subtitles"
-        srcLang="en"
-        label="English"
-      /> */}
+        Your browser does not support the video tag.
+      </video> */}
+      <video
+        width="900"
+        height="500"
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="border border-accent rounded-xl shadow-lg shadow-accent"
+      >
+        <source src="/hero.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>

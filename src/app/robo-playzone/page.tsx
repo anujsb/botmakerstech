@@ -141,7 +141,9 @@ const page = () => {
                           className="rounded-lg object-cover"
                         />
                       </AspectRatio>
-                      <p className="flex-grow overflow-auto text-lg">{game.content}</p>
+                      <p className="flex-grow overflow-auto text-lg">
+                        {game.content}
+                      </p>
                     </div>
                     <div className="h-full rounded-lg">
                       <video
@@ -232,12 +234,10 @@ const page = () => {
                   autoPlay
                   loop
                   muted
-                  className="border border-accent rounded-xl shadow-lg shadow-accent "
+                  playsInline
+                  className="border border-accent rounded-xl shadow-lg shadow-accent"
                 >
-                  <source
-                    src="/unitree.mp4"
-                    type="video/mp4"
-                  />
+                  <source src="/unitree.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
                 {/* <div className="grid grid-flow-col col-span-2 gap-4">
